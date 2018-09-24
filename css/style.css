@@ -1,0 +1,430 @@
+/*---------------------------------------------*/
+/*General site-wide formatting*/
+
+@font-face {
+    font-family: "Peich";
+    src: url("Peich.otf");
+}
+
+header, main, footer {
+	margin-left: 250px;
+	font-family: Arial, sans-serif;
+}
+
+main {
+	line-height: 25px;
+}
+
+main a, footer a {
+	color:darkmagenta;
+}
+
+main a:hover, footer a:hover {
+	color:crimson;
+}
+
+h1 {
+	color:#024C4C;
+}
+
+h2 {
+	font-size: 20px;
+	padding-top: 10px;
+	color: teal;
+}
+
+h4 {
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+strong {
+	color:teal;
+}
+
+ul {
+	margin-top: -10px;
+}
+
+.references p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: -5px;
+}
+
+
+/*--------------------------------------*/
+/*Vertical menu*/
+
+.vertical-menu {
+    width: 200px;
+	background-color: rgb(237, 237, 237);
+	font-family: Peich, Arial, sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.vertical-menu .logo {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.vertical-menu .logo p {
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	line-height: .5;
+	padding-top: 10px;
+}
+
+.vertical-menu .logo img {
+	padding-left: 15px;
+}	
+
+.vertical-menu .links {
+	width: 200px;
+}
+
+.vertical-menu .links a {
+	width:100%;
+	margin-left:0;
+	margin-right:0;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:45px;
+	padding-right:0;
+	display:block;
+	color: black;
+    text-decoration: none;
+	font-size: 23px;
+}
+
+.vertical-menu .links a:hover {
+    background-color: #ccc;
+	/*color: rgb(56, 69, 91);*/
+	color:darkcyan;
+}
+
+.vertical-menu .links a.active {
+    /* Add a color to the "active/current" link */
+	/* background-color: #4CAF50; */
+	background-color: teal;
+    color: white;
+}
+
+.vertical-menu .icons {
+	width: 200px;
+	position: absolute;
+	top: 600px;
+	bottom: 0;
+}
+
+.vertical-menu .icons p {
+	position: absolute;
+	bottom: 10px;	
+	padding-left: 40px;
+	font-size: 18px;
+}
+
+.vertical-menu hr {
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+	border-top: 1px solid #ccc;	
+}
+
+
+/*-------------------------------------*/
+/*Splash Page*/
+
+.splash {
+    box-sizing: border-box;
+	position: fixed;
+	overflow-y: hidden;
+	margin-left: 200px;
+	margin-top: -6px;
+	height: 100%;
+}
+
+.splash img {
+	width: 100%;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1200px) {
+    .column {
+        -ms-flex: 30%;
+        flex: 30%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        -ms-flex: 40%;
+        flex: 40%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*-------------------------------------*/
+/*Introduction Page*/
+
+.introduction {
+	min-width: 750px;
+	margin-right: 40px;
+}
+
+.introduction h1 {
+	border-bottom: 2px solid rgba(2,76,76,.70);
+	padding-bottom: 5px;
+}
+
+
+/*-------------------------------------*/
+/*Species Page*/
+
+.species {
+	min-width: 950px;
+	margin-right: 40px;
+}
+
+.species h1 {
+	border-bottom: 2px solid rgba(2,76,76,.70);
+	padding-bottom: 5px;
+}
+
+.species-flex {
+	display: flex;
+}
+
+.species-text {
+	min-width:  350px;
+	margin-top: -24px;
+}
+
+.species-page-image {
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 20px;
+  	align-self: flex-start; /* <-- this is required to make an element in a flexbock sticky */
+	min-width: 400px;
+	box-sizing: border-box;
+}
+
+.species-page-image img {
+   border: 2px solid rgba(2,76,76,.70);
+}
+
+/*-------------------------------------*/
+/*Phylogeny Page*/
+
+.phylogeny {
+	min-width: 750px;
+	margin-right: 40px;
+}
+
+.phylogeny h1 {
+	border-bottom: 2px solid rgba(2,76,76,.70);
+	padding-bottom: 5px;
+}
+
+
+/*-------------------------------------*/
+/*Glossary Page*/
+
+.glossary {
+	min-width: 750px;
+	margin-right: 40px;
+}
+
+.glossary h1 {
+	border-bottom: 2px solid rgba(2,76,76,.70);
+	padding-bottom: 5px;
+}
+
+
+/*-------------------------------------*/
+/*About Page*/
+
+.about-flex-container {
+	display: flex;
+}
+
+.about-page{
+	order: 1;
+	min-width: 700px;
+	margin-right: 50px;
+	text-align: justify;
+}
+
+.about-profile {
+	order: 2;
+    position: -webkit-sticky;
+  	position: sticky;
+	top: 20px;
+  	align-self: flex-start; /* <-- this is the fix */
+	width: 200px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.about-profile img {
+	display: block;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.about-profile #AldenDirksPicture {
+	border: 6px solid teal;
+	border-radius: 200px;
+}
+
+.about-footer {
+	font-size: 14px;
+}
+
+.about-footer hr {
+	width: 100%;
+	border-top: 1px solid #ccc;	
+}
+
+
+/*-------------------------------------*/
+/*Species Description Page*/
+
+.banner {
+	overflow-x: hidden;
+	padding-left: 200px;
+	margin-top: -20px;
+	opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.species-name {
+	margin-top: -5px;
+	color:#004C59;
+}
+
+.author {
+	margin-top: -20px;
+	margin-bottom: -15px;
+}
+
+.taxonomy{
+	margin-top: 30px;
+	font-size: 12px;
+}
+
+.taxonomy img{
+	vertical-align: middle;
+	padding-left: 10px;
+}
+
+.species-description-header {
+	border-bottom: 1px solid #ccc;	
+	min-width: 700px;
+}
+
+.species-description-content{
+	display: flex;
+}
+
+.species-description-text {	
+	min-width: 500px;
+	text-align: justify;
+}
+
+.species-description-images {
+	width: 275px;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+
+.species-description-images img { 
+	padding-bottom: 10px;
+}
+
+.species-description-images p { 
+	margin-top: -8px;;
+	font-size: 10px;
+	line-height: 1;
+}
+
+.species-description-footer{
+	margin-right: 225px;
+	margin-top: 30px;
+	font-size: 14px;
+}
+
+.species-description-specimens p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: -10px;
+}
+
+
+/*-------------------------------------*/
+/*Bibliography Page*/
+
+.bibliography {
+	min-width: 750px;
+	margin-right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th {
+	color: teal;
+	font-size: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
