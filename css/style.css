@@ -236,6 +236,13 @@ ul {
 	margin-top: -24px;
 }
 
+.species-text .synonymy {
+	margin-left: 25px;
+	margin-top: -20px;
+	font-size: 14px;
+	color: darkslategray;
+}
+
 .species-page-image {
 	position: -webkit-sticky;
   	position: sticky;
