@@ -75,6 +75,13 @@ phlebiaCoccineofulva.onmouseover = function() {
 	speciesImage.alt = "Image of Phlebia coccineofulva";
 };
 
+var serpulaHimantioides = document.getElementById('serpulaHimantioides');
+serpulaHimantioides.onmouseover = function() {
+	"use strict";
+	speciesImage.src = "";
+	speciesImage.alt = "Image of Serpula himantioides";
+};
+
 var stereumOstrea = document.getElementById('stereumOstrea');
 stereumOstrea.onmouseover = function() {
 	"use strict";
