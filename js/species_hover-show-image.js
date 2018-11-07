@@ -82,6 +82,13 @@ serpulaHimantioides.onmouseover = function() {
 	speciesImage.alt = "Image of Serpula himantioides";
 };
 
+var steccherinumOchraceum = document.getElementById('steccherinumOchraceum');
+steccherinumOchraceum.onmouseover = function() {
+	"use strict";
+	speciesImage.src = "";
+	speciesImage.alt = "Image of Steccherinum ochraceum";
+};
+
 var stereumOstrea = document.getElementById('stereumOstrea');
 stereumOstrea.onmouseover = function() {
 	"use strict";
