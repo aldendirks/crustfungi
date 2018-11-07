@@ -243,7 +243,7 @@ ul {
 	color: darkslategray;
 }
 
-.species-page-image {
+.species-image {
 	position: -webkit-sticky;
   	position: sticky;
   	top: 20px;
@@ -252,9 +252,10 @@ ul {
 	box-sizing: border-box;
 }
 
-.species-page-image img {
+.species-image img {
    border: 2px solid rgba(2,76,76,.70);
 }
+
 
 /*-------------------------------------*/
 /*Phylogeny Page*/

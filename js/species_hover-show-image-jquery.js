@@ -1,5 +1,8 @@
 $(document).ready(function() {
-	$(".species-text p").mouseover(function(){
-		$("#species-page-image-id").attr("src", this + ".jpg")
-	});
+	"use strict";
+	$(".species-text p").mouseover(
+		function(){
+			var speciesImage = $(this).attr("data-filename");
+			$(".species-image img").attr('src', '../images/species_page/'+speciesImage+'.jpg');
+		});
 });
