@@ -1,6 +1,5 @@
-.Rhistory
-.htaccess
-pdf/
+.DS_Store
 _notes/
 images/
 miscellaneous/
+pdf/
