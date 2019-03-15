@@ -1,14 +1,33 @@
-/*---------------------------------------------*/
-/*General site-wide formatting*/
+/*CrustFungi.Com CSS Code*/
+/*-----------------------*/
+/*Written by: Alden Dirks*/
+
+
+/*Site-wide Formatting*/
 
 @font-face {
-    font-family: "Peich";
-    src: url("Peich.otf");
+	font-family: "Peich";
+	src: url("/css/fonts/peich/peich.otf");
+}
+
+@font-face {
+	font-family: "Roboto-Regular";
+	src: url("/css/fonts/roboto/roboto-regular.ttf");
+}
+
+@font-face {
+	font-family: "Roboto-Italic";
+	src: url("/css/fonts/roboto/roboto-italic.ttf");
+}
+
+@font-face {
+	font-family: "Roboto-Thin-Italic";
+	src: url("/css/fonts/roboto/roboto-thin-italic.ttf");
 }
 
 header, main, footer {
 	margin-left: 250px;
-	font-family: Arial, sans-serif;
+	font-family: Roboto-Regular, Arial, sans-serif;
 }
 
 main {
@@ -16,15 +35,15 @@ main {
 }
 
 main a, footer a {
-	color:darkmagenta;
+	color: darkmagenta;
 }
 
 main a:hover, footer a:hover {
-	color:crimson;
+	color: crimson;
 }
 
 h1 {
-	color:#024C4C;
+	color: #024C4C;
 }
 
 h2 {
@@ -39,18 +58,21 @@ h4 {
 	margin-bottom: 15px;
 }
 
+p {
+	font-size: 15px;
+}
+
 strong {
-	color:teal;
+	color: teal;
+}
+
+em {
+	font-family: Roboto-Italic, Arial, sans-serif;
 }
 
 ul {
 	margin-top: -10px;
-}
-
-.references p {
-	font-size: 14px;
-	line-height: 20px;
-	margin-top: -5px;
+	font-size: 15px;
 }
 
 
@@ -58,7 +80,7 @@ ul {
 /*Vertical menu*/
 
 .vertical-menu {
-    width: 200px;
+	width: 200px;
 	background-color: rgb(237, 237, 237);
 	font-family: Peich, Arial, sans-serif;
 	position: fixed;
@@ -67,14 +89,15 @@ ul {
 	bottom: 0;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	z-index: 100;
 }
 
-.vertical-menu .logo {
+.vertical-menu #logo {
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
 
-.vertical-menu .logo p {
+.vertical-menu #logo p {
 	font-size: 50px;
 	text-align: center;
 	margin: 0;
@@ -82,58 +105,51 @@ ul {
 	padding-top: 10px;
 }
 
-.vertical-menu .logo img {
+.vertical-menu #logo img {
 	padding-left: 15px;
+	width: 175px;
 }	
 
-.vertical-menu .links {
+.vertical-menu #links {
 	width: 200px;
 }
 
-.vertical-menu .links a {
-	width:100%;
-	margin-left:0;
-	margin-right:0;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-left:45px;
-	padding-right:0;
-	display:block;
+.vertical-menu #links a {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 45px;
+	padding-right: 0;
+	display: block;
 	color: black;
     text-decoration: none;
 	font-size: 23px;
 }
 
-.vertical-menu .links a:hover {
-    background-color: #ccc;
-	/*color: rgb(56, 69, 91);*/
-	color:darkcyan;
-}
-
-.vertical-menu .links a.active {
-    /* Add a color to the "active/current" link */
-	/* background-color: #4CAF50; */
+.vertical-menu #links a:hover {
 	background-color: teal;
-    color: white;
+	color: white;
 }
 
-.vertical-menu .icons {
+.vertical-menu #copyright {
 	width: 200px;
 	position: absolute;
-	top: 600px;
+	top: 650px;
 	bottom: 0;
 }
 
-.vertical-menu .icons p {
+.vertical-menu #copyright p {
 	position: absolute;
-	bottom: 10px;	
+	bottom: 5px;	
 	padding-left: 40px;
 	font-size: 18px;
 }
 
-.vertical-menu hr {
+.vertical-menu #copyright hr {
 	position: absolute;
-	bottom: 60px;
+	bottom: 50px;
 	width: 100%;
 	border-top: 1px solid #ccc;	
 }
@@ -143,7 +159,7 @@ ul {
 /*Splash Page*/
 
 .splash {
-    box-sizing: border-box;
+	box-sizing: border-box;
 	position: fixed;
 	overflow-y: hidden;
 	margin-left: 200px;
@@ -156,47 +172,47 @@ ul {
 }
 
 .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
 }
 
 .column {
-    -ms-flex: 20%; /* IE10 */
-    flex: 20%;
-    max-width: 25%;
-    padding: 0 4px;
+	-ms-flex: 20%; /* IE10 */
+	flex: 20%;
+	max-width: 25%;
+	padding: 0 4px;
 }
 
 .column img {
-    margin-top: 8px;
-    vertical-align: middle;
+	margin-top: 8px;
+	vertical-align: middle;
 }
 
 @media screen and (max-width: 1200px) {
-    .column {
-        -ms-flex: 30%;
-        flex: 30%;
-        max-width: 100%;
-    }
+	.column {
+		-ms-flex: 30%;
+		flex: 30%;
+		max-width: 100%;
+	}
 }
 
 @media screen and (max-width: 900px) {
-    .column {
-        -ms-flex: 40%;
-        flex: 40%;
-        max-width: 100%;
-    }
+	.column {
+		-ms-flex: 40%;
+		flex: 40%;
+		max-width: 100%;
+	}
 }
 
 @media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
 }
 
 
@@ -232,15 +248,34 @@ ul {
 }
 
 .species-text {
-	min-width:  350px;
-	margin-top: -24px;
+	min-width: 400px;
 }
 
 .species-text .synonymy {
-	margin-left: 25px;
-	margin-top: -20px;
+	margin-left: 15px;
+	margin-top: -5px;
 	font-size: 14px;
 	color: darkslategray;
+}
+
+.binomial-flex {
+	display: flex;
+}
+
+.binomial-genus {
+	min-width: 150px;
+	margin-right: 25px;
+	margin-top: -15px;
+	margin-bottom: -5px;
+	color: teal;
+}
+
+.binomial-epithet {
+	padding-bottom: 15px;
+}
+
+.binomial-epithet p {
+	margin: 0px;
 }
 
 .species-image {
@@ -253,7 +288,13 @@ ul {
 }
 
 .species-image img {
-   border: 2px solid rgba(2,76,76,.70);
+	border: 2px solid rgba(2,76,76,.70);
+}
+
+.species-image p {
+	margin-top: -8px;
+	font-size: 15px;
+	font-style: italic;
 }
 
 
@@ -288,6 +329,16 @@ ul {
 /*-------------------------------------*/
 /*About Page*/
 
+.about {
+	min-width: 750px;
+	margin-right: 40px;
+}
+
+.about h1 {
+	border-bottom: 2px solid rgba(2,76,76,.70);
+	padding-bottom: 5px;
+}
+
 .about-flex-container {
 	display: flex;
 }
@@ -296,18 +347,18 @@ ul {
 	order: 1;
 	min-width: 700px;
 	margin-right: 50px;
-	text-align: justify;
+	margin-top: -20px;
+	text-align: left;
 }
 
 .about-profile {
 	order: 2;
-    position: -webkit-sticky;
-  	position: sticky;
+	position: -webkit-sticky;
+	position: sticky;
 	top: 20px;
-  	align-self: flex-start; /* <-- this is the fix */
+	align-self: flex-start; /* <-- this is the fix */
 	width: 200px;
 	margin-top: 10px;
-	margin-right: 10px;
 }
 
 .about-profile img {
@@ -315,7 +366,6 @@ ul {
 	margin-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 .about-profile #AldenDirksPicture {
@@ -337,25 +387,26 @@ ul {
 /*Species Description Page*/
 
 .banner {
+	min-width: 870px;
+	margin-left: 200px;
+	margin-top: 0px;
+	margin-right: 10px;
 	overflow-x: hidden;
-	padding-left: 200px;
-	margin-top: -20px;
-	opacity: 0.8;
-    filter: alpha(opacity=80); /* For IE8 and earlier */
+	opacity: 0.75;
+	filter: alpha(opacity = 0.75); /* For IE8 and earlier */
+}
+
+.banner img {
+	height: 200px;
 }
 
 .species-name {
 	margin-top: -5px;
-	color:#004C59;
+	color: #004C59;
 }
 
-.author {
-	margin-top: -20px;
-	margin-bottom: -15px;
-}
-
-.taxonomy{
-	margin-top: 30px;
+.taxonomy {
+	margin-top: -15px;
 	font-size: 12px;
 }
 
@@ -371,68 +422,88 @@ ul {
 
 .species-description-content{
 	display: flex;
+	align-items: flex-start;
 }
 
 .species-description-text {	
 	min-width: 500px;
 	text-align: justify;
+	position: -webkit-sticky;
+	position: sticky;
+	align-self: flex-end;
+	bottom: 0;
 }
 
 .species-description-images {
 	width: 275px;
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-left: 40px;
-	margin-right: 20px;
+	margin-right: 10px;
+	margin-bottom: -10px;
 }
 
 .species-description-images img { 
+	width: 275px;
 	padding-bottom: 10px;
 }
 
 .species-description-images p { 
-	margin-top: -8px;;
-	font-size: 10px;
-	line-height: 1;
-}
-
-.species-description-footer{
-	margin-right: 225px;
-	margin-top: 30px;
-	font-size: 14px;
-}
-
-.species-description-specimens p {
-	font-size: 14px;
-	line-height: 20px;
 	margin-top: -10px;
+	padding-bottom: 5px;
+	font-size: 13px;
+	line-height: 1.25;
+}
+
+.species-description-footer {
+	margin-top: 40px;
+	margin-left: -5px;
+	padding-left: 5px;
+	font-family: Roboto-Thin-Italic;
 }
 
 
 /*-------------------------------------*/
-/*Bibliography Page*/
+/*Literature Page*/
 
-.bibliography {
+.literature {
 	min-width: 750px;
-	margin-right: 10px;
+	margin-right: 40px;
+}
+
+.literature h1 {
+	border-bottom: 2px solid rgba(2,76,76,.70);
+	padding-bottom: 5px;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+	counter-reset: rowNumber; /*part of code to automatically number row*/
 }
 
 th {
-	color: teal;
+	color: whitesmoke;
+	background-color: teal;
 	font-size: 20px;
 }
 
 th, td {
-    text-align: left;
-    padding: 16px;
+	text-align: left;
+	padding: 16px;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2
+	background-color: #f2f2f2;
 }
+
+tr:not(:first-child) {
+	counter-increment: rowNumber;
+} /*part of code to automatically number row*/
+
+tr td:first-child::before {
+	content: counter(rowNumber);
+	min-width: 1em;
+	margin-right: 0.5em;
+} /*part of code to automatically number row*/

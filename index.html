@@ -1,76 +1,92 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Crust Fungi</title>
-		<link rel="stylesheet" href="css/style.css">
-		<!--faviconit.com favicon generator-->
-		<link rel="shortcut icon" href="images/favicon/favicon.ico">
-		<link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
-		<link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
-		<link rel="icon" type="image/png" sizes="160x160" href="images/favicon/favicon-160.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96.png">
-		<link rel="icon" type="image/png" sizes="64x64" href="images/favicon/favicon-64.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
-		<link rel="apple-touch-icon" href="images/favicon/favicon-57.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-72.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-144.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon-60.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
-		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="../images/favicon/favicon-144.png">
-		<meta name="msapplication-config" content="../images/favicon/browserconfig.xml">
-	</head>
-	<body>
-		<div class="vertical-menu">
-			<div class="logo">
-				<p>CRUST</p>
-				<a href="https://crustfungi.com"><img src="images/icons/site_icon_small.png" alt="The logo of the Crust Fungi website, a linoleum print of a Phlebia radiata" width="175"></a>
-				<p>FUNGI</p>
-			</div>
-			<div class="links">
-				<a href="html/introduction.html">INTRO</a>
-				<a href="html/species.html">SPECIES</a>
-				<a href="html/phylogeny.html">PHYLOGENY</a>
-				<a href="html/glossary.html">GLOSSARY</a>
-				<a href="html/about.html">ABOUT</a>
-			</div>
-			<div class="icons">
-				<hr>
-				<p>&copy; 2018 ALDEN DIRKS</p>
-			</div>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135441904-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-135441904-1');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrustFungi.Com</title>
+<meta name="description" content="CrustFungi.Com showcases the diversity of crust fungi in North America. It includes an introduction to collecting crusts, species descriptions, phylogenetic information, and more.">
+<link rel="stylesheet" href="/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+<script src="/js/handlebars.js"></script>
+<!--faviconit.com favicon generator-->
+<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="/images/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="/images/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="/images/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+</head>
+	
+<body>
+<div class="vertical-menu">
+	<div id="logo">
+		<script id="logo-template" type="text/x-handlebars-template">
+			<p>CRUST</p>
+			<a href="https://crustfungi.com"><img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata"></a>
+			<p>FUNGI</p>
+		</script>
+	</div>
+	<div id="links">
+		<script id="links-template" type="text/x-handlebars-template">
+			{{{links}}}
+		</script>
+	</div>
+	<div id="copyright">
+		<script id="copyright-template" type="text/x-handlebars-template">
+			<hr>
+			<p>&copy; {{copyright}} ALDEN DIRKS</p>
+		</script>
+	</div>
+</div>
+	
+<div class="splash">
+	<div class="row">
+		<div class="column">
+			<img src="/images/index/mycena-leaiana.jpg" alt="Mycena leiana">
+			<img src="/images/index/phlebia-incarnata.jpg" alt="Phlebia incarnata">
+			<img src="/images/index/phlebiobsis-gigantea.jpg" alt="Phlebiopsis gigantea">
+			<img src="/images/index/trichaptum-biforme.jpg" alt="Trichaptum biforme">
 		</div>
-		<div class="splash">
-			<div class="row">
-				<div class="column">
-					<img src="images/splash_page/Mycena leaiana.jpg" alt="">
-					<img src="images/splash_page/Phlebia incarnata.jpg" alt="">
-					<img src="images/splash_page/Phlebiobsis gigantea.jpg" alt="">
-					<img src="images/splash_page/Trichaptum biforme.jpg" alt="">
-			  	</div>
-			  	<div class="column">
-					<img src="images/splash_page/Scutellinia scutellata.jpg" alt="">
-					<img src="images/splash_page/Mycena corticola.jpg" alt="">
-					<img src="images/splash_page/Lachnellula resinaria.jpg" alt="">
-					<img src="images/splash_page/Russula compacta.jpg" alt="">
-			  	</div> 
-			  	<div class="column">
-					<img src="images/splash_page/Gymnosporangium juniperivirginianeae.jpg" alt="">
-					<img src="images/splash_page/Hymenochaete rubiginosa.jpg" alt="">
-					<img src="images/splash_page/IMG_4447.jpg" alt="">
-					<img src="images/splash_page/Urnula craterium.jpg" alt="">
-			  	</div>
-			  	<div class="column">
-					<img src="images/splash_page/Lentinus arcularius.jpg" alt="">
-					<img src="images/splash_page/IMG_4436.jpg" alt="">
-					<img src="images/splash_page/Xylobolus frustulatus.jpg" alt="">
-			  	</div>
-			</div>
+		<div class="column">
+			<img src="/images/index/scutellinia-scutellata.jpg" alt="Scutellinia scutellata">
+			<img src="/images/index/mycena-corticola.jpg" alt="Mycena corticola">
+			<img src="/images/index/lachnellula-resinaria.jpg" alt="Lachnellula resinaria">
+			<img src="/images/index/russula-compacta.jpg" alt="Russula compacta">
+		</div> 
+		<div class="column">
+			<img src="/images/index/gymnosporangium-juniperivirginianeae.jpg" alt="Gymnosporangium juniperivirginianae">
+			<img src="/images/index/hymenochaete-rubiginosa.jpg" alt="Hymenochaete rubiginosa">
+			<img src="/images/index/aleurodiscus-oakesii.jpg" alt="Aleurodiscus oakesii">
+			<img src="/images/index/urnula-craterium.jpg" alt="Urnula craterium">
 		</div>
-	</body>
+		<div class="column">
+			<img src="/images/index/lentinus-arcularius.jpg" alt="Lentinus arcularius">
+			<img src="/images/index/smooth-patch-disease.jpg" alt="Smooth patch disease caused by Aleurodiscus oakesii">
+			<img src="/images/index/xylobolus-frustulatus.jpg" alt="Xylobolus frustulatus">
+		</div>
+	</div>
+</div>
+</body>
 </html>
