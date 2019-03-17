@@ -52,7 +52,7 @@ body {
 		float: left; /* Adding float: left; to a display: block; element makes it act more like an inline element */
 		display: block; /* With float: left; specified, this display rule seems redundant */
 		text-align: center; /* This seems to be redundant */
-		padding: 14px 14px;
+		padding: 15px;
 	}
 	.nav a:not(:first-child) {
 		display: none;
@@ -108,7 +108,7 @@ body {
 		float: left; /* Adding float: left; to a display: block; element makes it act more like an inline element */
 		display: block; /* With float: left; specified, this display rule seems redundant */
 		text-align: center; /* This seems to be redundant */
-		padding: 14px 14px;
+		padding: 15px;
 	}
 	.nav .nav-icon {
 		display: none;
