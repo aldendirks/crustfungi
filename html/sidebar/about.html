@@ -40,11 +40,11 @@
 </head>
 	
 <body>
-<div class="vertical-menu">
+<div class="nav" id="responsive-nav">
 	<div id="logo">
 		<script id="logo-template" type="text/x-handlebars-template">
 			<p>CRUST</p>
-			<a href="https://crustfungi.com"><img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata"></a>
+			<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
 			<p>FUNGI</p>
 		</script>
 	</div>
@@ -52,16 +52,17 @@
 		<script id="links-template" type="text/x-handlebars-template">
 			{{{links}}}
 		</script>
+		<script src="/js/activateNavIcon.js"></script>
+		<script src="/js/animateNavIcon.js"></script>
 	</div>
 	<div id="copyright">
 		<script id="copyright-template" type="text/x-handlebars-template">
-			<hr>
 			<p>&copy; {{copyright}} ALDEN DIRKS</p>
 		</script>
 	</div>
 </div>
 	
-<div class="about">
+<div class="content about">
 	<header>
 		<h1>About crustfungi.com</h1>
 	</header>
@@ -76,34 +77,32 @@
 			<a href="https://mushroomobserver.org/observer/show_user/8671" target="_blank"><img src="/images/icons/MO_icon_original.png" alt="CrustFungi.Com Mushroom Observer icon" width="60px"></a>
 		</div>
 		<div class="about-page">
-			<main>
-				<section>
-					<h2>The Author</h2>
-					<p>Alden Dirks is the designer, creator, and curator of crustfungi.com. He is a professional mycologist with years of experience researching and identifying fungi. Currently, Alden is engaged in two fungal biodiversity inventories through the <a href="http://mycoflora.org/" target="_blank">North American Mycoflora Project</a>: a survey of corticioid fungi in Wisconsin with an emphasis on the UW-Madison Arboretum and a survey of all fungi at the Boston Harbor Islands National Recreation Area. As a graduate student in the Agroecology Master's program at the University of Wisconsin-Madison, he studies the community composition of arbuscular mycorrhizal fungi associating with switchgrass, a perennial, warm-season biofuel feedstock and forage crop. Alden is also the founder and president of the <a href="https://madisonmycologicalsociety.com" target="_blank">Madison Mycological Society</a>. If you are in the area, join us for forays and other events!</p>
-				</section>
-				<section>
-					<h2>For Hire</h2>
-					<p>If you have fungal specimens you need identified, I can ID your specimen for $10. Individuals are often interested in fungi that they expect to be plant pathogens so that they can take appropriate precautions and remedial measures. It takes me about two hours to identify most crusts given the amount of microscopy required for a correct determination. Please send me an email if you are interested in this service.</p>
-				</section>
-				<section>
-					<h2>Please Donate</h2>
-					<p>This website is an informational resource I offer the public for free in order to fill a knowledge gap on the internet. Little attention is paid to crust fungi despite their enormous importance as wood decayers, plant pathogens, and sources of novel bioactive compounds. Many times, the first action to understand the consequences or potential uses of a fungus is a correct determination. If you benefit from this site, please considering donating money to offset web-hosting costs. I'd greatly appreciate it.</p>
-					<div class="donate-button">
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-							<!-- Identify your business so that you can collect the payments. -->
-							<input type="hidden" name="business" value="alden@crustfungi.com">
-							<!-- Specify a Donate button. -->
-							<input type="hidden" name="cmd" value="_donations">
-							<!-- Specify details about the contribution -->
-							<input type="hidden" name="item_name" value="Donation to crustfungi.com">
-							<input type="hidden" name="currency_code" value="USD">
-							<!-- Display the payment button. -->
-							<input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate">
-							<img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-						</form>
-					</div>
-				</section>
-			</main>
+			<section>
+				<h2>The Author</h2>
+				<p>Alden Dirks is the designer, creator, and curator of crustfungi.com. He is a professional mycologist with years of experience researching and identifying fungi. Currently, Alden is engaged in two fungal biodiversity inventories through the <a href="http://mycoflora.org/" target="_blank">North American Mycoflora Project</a>: a survey of corticioid fungi in Wisconsin with an emphasis on the UW-Madison Arboretum and a survey of all fungi at the Boston Harbor Islands National Recreation Area. As a graduate student in the Agroecology Master's program at the University of Wisconsin-Madison, he studies the community composition of arbuscular mycorrhizal fungi associating with switchgrass, a perennial, warm-season biofuel feedstock and forage crop. Alden is also the founder and president of the <a href="https://madisonmycologicalsociety.com" target="_blank">Madison Mycological Society</a>. If you are in the area, join us for forays and other events!</p>
+			</section>
+			<section>
+				<h2>For Hire</h2>
+				<p>If you have fungal specimens you need identified, I can ID your specimen for $10. Individuals are often interested in fungi that they expect to be plant pathogens so that they can take appropriate precautions and remedial measures. It takes me about two hours to identify most crusts given the amount of microscopy required for a correct determination. Please send me an email if you are interested in this service.</p>
+			</section>
+			<section>
+				<h2>Please Donate</h2>
+				<p>This website is an informational resource I offer the public for free in order to fill a knowledge gap on the internet. Little attention is paid to crust fungi despite their enormous importance as wood decayers, plant pathogens, and sources of novel bioactive compounds. Many times, the first action to understand the consequences or potential uses of a fungus is a correct determination. If you benefit from this site, please considering donating money to offset web-hosting costs. I'd greatly appreciate it.</p>
+				<div class="donate-button">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<!-- Identify your business so that you can collect the payments. -->
+						<input type="hidden" name="business" value="alden@crustfungi.com">
+						<!-- Specify a Donate button. -->
+						<input type="hidden" name="cmd" value="_donations">
+						<!-- Specify details about the contribution -->
+						<input type="hidden" name="item_name" value="Donation to crustfungi.com">
+						<input type="hidden" name="currency_code" value="USD">
+						<!-- Display the payment button. -->
+						<input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate">
+						<img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+					</form>
+				</div>
+			</section>
 			<footer class="about-footer">
 				<hr>
 				<p><em>crustfungi.com went live on the summer solstice of 2018</em></p>

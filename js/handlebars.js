@@ -10,7 +10,7 @@ window.onload = function() {
   	//Render the data into the template
   	var rendered_logo = compiled_template_logo({logo: 'src="/images/icons/site_icon_small.png"'});
 	var rendered_links = compiled_template_links({
-		links: '<a href="/html/sidebar/introduction.html">INTRO</a><a href="/html/sidebar/species.html">SPECIES</a><a href="/html/sidebar/phylogeny.html">PHYLOGENY</a><a href="/html/sidebar/glossary.html">GLOSSARY</a><a href="/html/sidebar/literature.html">LITERATURE</a><a href="/html/sidebar/about.html">ABOUT</a>'
+		links: '<a href="/">HOME</a><a href="/html/sidebar/introduction.html">INTRO</a><a href="/html/sidebar/species.html">SPECIES</a><a href="/html/sidebar/glossary.html">GLOSSARY</a><a href="/html/sidebar/literature.html">LIT</a><a href="/html/sidebar/about.html">ABOUT</a><a href="javascript:void(0);" class="nav-icon" onclick="activateNavIcon()"><div class="menu" onclick="animateNavIcon(this)"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>'
 	});
 	var rendered_copyright = compiled_template_copyright({copyright: "2019"});
   	//Overwrite the contents of #target with the renderer HTML

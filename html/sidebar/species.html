@@ -42,11 +42,11 @@
 </head>
 	
 <body>
-<div class="vertical-menu">
+<div class="nav" id="responsive-nav">
 	<div id="logo">
 		<script id="logo-template" type="text/x-handlebars-template">
 			<p>CRUST</p>
-			<a href="https://crustfungi.com"><img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata"></a>
+			<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
 			<p>FUNGI</p>
 		</script>
 	</div>
@@ -54,354 +54,353 @@
 		<script id="links-template" type="text/x-handlebars-template">
 			{{{links}}}
 		</script>
+		<script src="/js/activateNavIcon.js"></script>
+		<script src="/js/animateNavIcon.js"></script>
 	</div>
 	<div id="copyright">
 		<script id="copyright-template" type="text/x-handlebars-template">
-			<hr>
 			<p>&copy; {{copyright}} ALDEN DIRKS</p>
 		</script>
 	</div>
 </div>
-		
-<div class="species">
+
+<div class="content species">
 	<header>
-		<h1>Species Descriptions</h1>
+		<h1>Corticioid Fungal Species</h1>
 	</header>
-	<main>
-		<div class="species-flex">
-			<div class="species-text">
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Aleurodiscus</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="aleurodiscusOakesii" data-species="Aleurodiscus oakesii"><em>A. oakesii</em></p>
-					</div>
+	<div class="species-flex">
+		<div class="species-text">
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Aleurodiscus</em></p>
 				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Athelia</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="atheliaBombacina" data-species="Athelia bombacina"><em>A. bombacina</em></p>
-						<p data-filename="atheliaEpiphylla" data-species="Athelia epiphylla"><em>A. epiphylla</em></p>
-					</div>
+				<div class="binomial-epithet">
+					<p data-filename="aleurodiscusOakesii" data-species="Aleurodiscus oakesii"><em>A. oakesii</em></p>
 				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Botryobasidium</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="botryobasidiumConspersum" data-species="Botryobasidium conspersum"><em>B. conspersum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Botryohypochnus</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="botryohypochnusIsabellinus" data-species="Botryohypochnus isabellinus"><em>B. isabellinus</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Byssocorticium</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="byssocorticiumAtrovirens" data-species="Byssocorticium atrovirens"><a href="/html/species/byssocorticium-atrovirens.html"><em>B. atrovirens</em></a></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Byssomerulius</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="byssomeruliusCorium" data-species="Byssomerulius corium"><em>B. corium</em></p>
-						<p data-filename="byssomeruliusIncarnatus" data-species="Byssomerulius incarnatus"><em>B. incarnatus</em></p>
-						<p class="synonymy" data-filename="byssomeruliusIncarnatus" data-species="Byssomerulius incarnatus">&equiv; <em>Phlebia incarnata</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Coniophora</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="coniophoraPuteana" data-species="Coniophora puteana"><em>C. puteana</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Corticium</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="corticiumLombardiae" data-species="Corticium lombardiae"><em>C. lombardiae</em></p>
-						<p data-filename="corticiumMeridioroseum" data-species="Corticium meridioroseum"><em>C. meridioroseum</em></p>
-						<p data-filename="corticiumRoseocarneum" data-species="Corticium roseocarneum"><em>C. roseocarneum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Cylindrobasidium</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="cylindrobasidiumEvolvens" data-species="Cylindrobasidium evolvens"><em>C. evolvens</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Dendrothele</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="dendrotheleAcerina" data-species="Dendrothele acerina"><em>D. acerina</em></p>
-						<p data-filename="dendrotheleNivosa" data-species="Dendrothele nivosa"><em>D. nivosa</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Dichostereum</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="dichostereumSordulentum" data-species="Dichostereum sordulentum"><em>D. sordulentum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Galzinia</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="galziniaIncrustans" data-species="Galzinia incrustans"><em>G. incrustans</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Granulobasidium</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="granulobasidiumVellereum" data-species="Granulobasidium vellereum"><em>G. vellereum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Hydnophlebia</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="hydnophlebiaChrysorhiza" data-species="Hydnophlebia chrysorhiza"><em>H. chrysorhiza</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Hymenochaete</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="hymenochaeteRubiginosa" data-species="Hymenochaete rubiginosa"><em>H. rubiginosa</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Hymenochaetopsis</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="hymenochaetopsisCorrugata" data-species="Hymenochaetopsis corrugata"><em>H. corrugata</em></p>
-						<p data-filename="hymenochaetopsisOlivacea" data-species="Hymenochaetopsis olivacea"><em>H. olivacea</em></p>
-						<p class="synonymy" data-filename="hymenochaetopsisOlivacea" data-species="Hymenochaetopsis olivacea">&equiv; <em>Pseudochaete olivacea</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Hyphoderma</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="hyphodermaTenue" data-species="Hyphoderma tenue"><em>H. tenue</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Hyphodontia</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="hyphodontiaSubspathulata" data-species="Hyphodontia subspathulata"><em>H. subspathulata</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Hypochniciellum</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="hypochniciellumOvoideum" data-species="Hypochniciellum ovoideum"><em>H. ovoideum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Irpex</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="irpexLacteus" data-species="Irpex lacteus"><em>I. lacteus</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Lindtneria</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="lindtneriaLeucobryophila" data-species="Lindtneria leucobryophila"><em>L. leucobryophila</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Lyomyces</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="lyomycesJuniperi" data-species="Lyomyces juniperi"><em>L. juniperi</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Leucogyrophana</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="leucogyrophanaMollusca" data-species="Leucogyrophana mollusca"><em>L. mollusca</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Paullicorticium</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="paullicorticiumPearsonii" data-species="Paullicorticium pearsonii"><em>P. pearsonii</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Peniophora</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="peniophoraAlbobadia" data-species="Peniophora albobadia"><em>P. albobadia</em></p>
-						<p data-filename="peniophoraCinerea" data-species="Peniophora cinerea"><em>P. cinerea</em></p>
-						<p data-filename="peniophoraIncarnata" data-species="Peniophora incarnata"><em>P. incarnata</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Peniophorella</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="peniophorellaPubera" data-species="Peniophorella pubera"><em>P. pubera</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Phlebia</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="phlebiaCoccineofulva" data-species="Phlebia coccineofulva"><em>P. coccineofulva</em></p>
-						<p data-filename="phlebiaTremellosa" data-species="Phlebia tremellosa"><em>P. tremellosa</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Phlebiopsis</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="phlebiopsisGigantea" data-species="Phlebiopsis gigantea"><em>P. gigantea</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Resinicium</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="resiniciumBicolor" data-species="Resinicium bicolor"><em>R. bicolor</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Serpula</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="serpulaHimantioides" data-species="Serpula himantioides"><em>S. himantioides</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Sistotrema</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="sistotremaCoroniferum" data-species="Sistotrema coroniferum"><em>S. coroniferum</em></p>
-						<p data-filename="sistotremaOblongisporum" data-species="Sistotrema oblongisporum"><em>S. oblongisporum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Sistotremastrum</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="sistotremastrumGuttuliferum" data-species="Sistotremastrum guttuliferum"><em>S. guttuliferum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Sphaerobasidium</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="sphaerobasidiumMinutum" data-species="Sphaerobasidium minutum"><em>S. minutum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Steccherinum</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="steccherinumOchraceum" data-species="Steccherinum ochraceum"><em>S. ochraceum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Stereum</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="stereumOstrea" data-species="Stereum ostrea"><em>S. ostrea</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Subulicystidium</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="subulicystidiumBrachysporum" data-species="Subulicystidium brachysporum"><em>S. brachysporum</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Thelephora</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="thelephoraMultipartita" data-species="Thelephora multipartita"><em>T. multipartita</em></p>
-						<p data-filename="thelephoraTerrestris" data-species="Thelephora terrestris"><em>T. terrestris</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Trechispora</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="trechisporaFarinacea" data-species="Trechispora farinacea"><em>T. farinacea</em></p>
-					</div>
-				</div>
-				<div class="binomial-flex">
-					<div class="binomial-genus">
-						<p><em>Xylobolus</em></p>
-					</div>
-					<div class="binomial-epithet">
-						<p data-filename="xylobolusFrustulatus" data-species="Xylobolus frustulatus"><em>X. frustulatus</em></p>
-					</div>
-				</div>	
 			</div>
-			<div class="species-image">
-				<img src="/images/species_page/aleurodiscusOakesii.jpg" alt="Aleurodiscus oakesii" width="100%">
-				<p><em>Aleurodiscus oakesii</em></p>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Athelia</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="atheliaBombacina" data-species="Athelia bombacina"><em>A. bombacina</em></p>
+					<p data-filename="atheliaEpiphylla" data-species="Athelia epiphylla"><em>A. epiphylla</em></p>
+				</div>
 			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Botryobasidium</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="botryobasidiumConspersum" data-species="Botryobasidium conspersum"><em>B. conspersum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Botryohypochnus</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="botryohypochnusIsabellinus" data-species="Botryohypochnus isabellinus"><em>B. isabellinus</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Byssocorticium</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="byssocorticiumAtrovirens" data-species="Byssocorticium atrovirens"><a href="/html/species/byssocorticium-atrovirens.html"><em>B. atrovirens</em></a></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Byssomerulius</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="byssomeruliusCorium" data-species="Byssomerulius corium"><em>B. corium</em></p>
+					<p data-filename="byssomeruliusIncarnatus" data-species="Byssomerulius incarnatus"><em>B. incarnatus</em></p>
+					<p class="synonymy" data-filename="byssomeruliusIncarnatus" data-species="Byssomerulius incarnatus">&equiv; <em>Phlebia incarnata</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Coniophora</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="coniophoraPuteana" data-species="Coniophora puteana"><em>C. puteana</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Corticium</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="corticiumLombardiae" data-species="Corticium lombardiae"><em>C. lombardiae</em></p>
+					<p data-filename="corticiumMeridioroseum" data-species="Corticium meridioroseum"><em>C. meridioroseum</em></p>
+					<p data-filename="corticiumRoseocarneum" data-species="Corticium roseocarneum"><em>C. roseocarneum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Cylindrobasidium</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="cylindrobasidiumEvolvens" data-species="Cylindrobasidium evolvens"><em>C. evolvens</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Dendrothele</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="dendrotheleAcerina" data-species="Dendrothele acerina"><em>D. acerina</em></p>
+					<p data-filename="dendrotheleNivosa" data-species="Dendrothele nivosa"><em>D. nivosa</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Dichostereum</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="dichostereumSordulentum" data-species="Dichostereum sordulentum"><em>D. sordulentum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Galzinia</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="galziniaIncrustans" data-species="Galzinia incrustans"><em>G. incrustans</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Granulobasidium</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="granulobasidiumVellereum" data-species="Granulobasidium vellereum"><em>G. vellereum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Hydnophlebia</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="hydnophlebiaChrysorhiza" data-species="Hydnophlebia chrysorhiza"><em>H. chrysorhiza</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Hymenochaete</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="hymenochaeteRubiginosa" data-species="Hymenochaete rubiginosa"><em>H. rubiginosa</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Hymenochaetopsis</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="hymenochaetopsisCorrugata" data-species="Hymenochaetopsis corrugata"><em>H. corrugata</em></p>
+					<p data-filename="hymenochaetopsisOlivacea" data-species="Hymenochaetopsis olivacea"><em>H. olivacea</em></p>
+					<p class="synonymy" data-filename="hymenochaetopsisOlivacea" data-species="Hymenochaetopsis olivacea">&equiv; <em>Pseudochaete olivacea</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Hyphoderma</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="hyphodermaTenue" data-species="Hyphoderma tenue"><em>H. tenue</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Hyphodontia</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="hyphodontiaSubspathulata" data-species="Hyphodontia subspathulata"><em>H. subspathulata</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Hypochniciellum</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="hypochniciellumOvoideum" data-species="Hypochniciellum ovoideum"><em>H. ovoideum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Irpex</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="irpexLacteus" data-species="Irpex lacteus"><em>I. lacteus</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Lindtneria</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="lindtneriaLeucobryophila" data-species="Lindtneria leucobryophila"><em>L. leucobryophila</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Lyomyces</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="lyomycesJuniperi" data-species="Lyomyces juniperi"><em>L. juniperi</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Leucogyrophana</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="leucogyrophanaMollusca" data-species="Leucogyrophana mollusca"><em>L. mollusca</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Paullicorticium</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="paullicorticiumPearsonii" data-species="Paullicorticium pearsonii"><em>P. pearsonii</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Peniophora</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="peniophoraAlbobadia" data-species="Peniophora albobadia"><em>P. albobadia</em></p>
+					<p data-filename="peniophoraCinerea" data-species="Peniophora cinerea"><em>P. cinerea</em></p>
+					<p data-filename="peniophoraIncarnata" data-species="Peniophora incarnata"><em>P. incarnata</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Peniophorella</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="peniophorellaPubera" data-species="Peniophorella pubera"><em>P. pubera</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Phlebia</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="phlebiaCoccineofulva" data-species="Phlebia coccineofulva"><em>P. coccineofulva</em></p>
+					<p data-filename="phlebiaTremellosa" data-species="Phlebia tremellosa"><em>P. tremellosa</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Phlebiopsis</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="phlebiopsisGigantea" data-species="Phlebiopsis gigantea"><em>P. gigantea</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Resinicium</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="resiniciumBicolor" data-species="Resinicium bicolor"><em>R. bicolor</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Serpula</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="serpulaHimantioides" data-species="Serpula himantioides"><em>S. himantioides</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Sistotrema</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="sistotremaCoroniferum" data-species="Sistotrema coroniferum"><em>S. coroniferum</em></p>
+					<p data-filename="sistotremaOblongisporum" data-species="Sistotrema oblongisporum"><em>S. oblongisporum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Sistotremastrum</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="sistotremastrumGuttuliferum" data-species="Sistotremastrum guttuliferum"><em>S. guttuliferum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Sphaerobasidium</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="sphaerobasidiumMinutum" data-species="Sphaerobasidium minutum"><em>S. minutum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Steccherinum</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="steccherinumOchraceum" data-species="Steccherinum ochraceum"><em>S. ochraceum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Stereum</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="stereumOstrea" data-species="Stereum ostrea"><em>S. ostrea</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Subulicystidium</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="subulicystidiumBrachysporum" data-species="Subulicystidium brachysporum"><em>S. brachysporum</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Thelephora</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="thelephoraMultipartita" data-species="Thelephora multipartita"><em>T. multipartita</em></p>
+					<p data-filename="thelephoraTerrestris" data-species="Thelephora terrestris"><em>T. terrestris</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Trechispora</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="trechisporaFarinacea" data-species="Trechispora farinacea"><em>T. farinacea</em></p>
+				</div>
+			</div>
+			<div class="binomial-flex">
+				<div class="binomial-genus">
+					<p><em>Xylobolus</em></p>
+				</div>
+				<div class="binomial-epithet">
+					<p data-filename="xylobolusFrustulatus" data-species="Xylobolus frustulatus"><em>X. frustulatus</em></p>
+				</div>
+			</div>	
 		</div>
-	</main>
+		<div class="species-image">
+			<img src="/images/species_page/aleurodiscusOakesii.jpg" alt="Aleurodiscus oakesii" width="100%">
+			<p><em>Aleurodiscus oakesii</em></p>
+		</div>
+	</div>
 </div>
 </body>
 </html>

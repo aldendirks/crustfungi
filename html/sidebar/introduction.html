@@ -40,11 +40,11 @@
 </head>
 	
 <body>
-<div class="vertical-menu">
+<div class="nav" id="responsive-nav">
 	<div id="logo">
 		<script id="logo-template" type="text/x-handlebars-template">
 			<p>CRUST</p>
-			<a href="https://crustfungi.com"><img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata"></a>
+			<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
 			<p>FUNGI</p>
 		</script>
 	</div>
@@ -52,37 +52,34 @@
 		<script id="links-template" type="text/x-handlebars-template">
 			{{{links}}}
 		</script>
+		<script src="/js/activateNavIcon.js"></script>
+		<script src="/js/animateNavIcon.js"></script>
 	</div>
 	<div id="copyright">
 		<script id="copyright-template" type="text/x-handlebars-template">
-			<hr>
 			<p>&copy; {{copyright}} ALDEN DIRKS</p>
 		</script>
 	</div>
 </div>
-	
-<div class="introduction">
+
+<div class="content introduction">
 	<header>
 		<h1>Introduction to Crust Fungi</h1>
 	</header>
-	<main>
-		<section>
-			<p>Besides the old rice burnt onto the bottom of your pot, crusts&mdash;or corticioid fungi&mdash;are of great morphological and evolutionary diversity, as well as ecological importance. You can find them almost anywhere where there is wood, growing on the underside of a stick or log, on the bark of living trees, or even from the ground. They make their living as saprotrophs, eating dead organic matter, or biotrophs, gaining nutrition from a living host. In the lattter case, they can be mutualistic, resulting in reciprocal growth and survival benefits for the plant host and the fungus, or pathogenic, thriving at the expense of the plant. In many conifer forests, the majority or the most dominant ectomycorrhizal fungi are crusts (Rosenthal <em>et al.</em> 2017). While mushroom hunters often scoff at crusts, fungal ecologists increasingly appreciate their importance for forest health and ecosystem functioning.</p>
-			<div></div>
-			<p>OK, I'm a mushroom hunter, too. I'll be the first to admit that these aren't the flashiest of organisms. They are usually small and indiscrete, some nothing more than a sheen or different hue on the bottom of a decaying branch. And no, they are not edible. However, some crusts take on wild textures and colors whose evolutionary purpose defies explanation. If one dares to travel to the microscopic realms, they are greeted by truly bizarre structures like swollen oily cells, crystal-shrouded lances, and spiky clubs. To look into the microscope at a crust is to touch down on an alien planet with fractal geography and ornate constructions.</p>
-			<div></div>
-			<p>While crusts often speak for themselves, mycologists do have a technical definition for what constitutes a corticioid fungus. According to Larsson (2007), corticioid fungi are basidiomycetes with effused, resupinate basidiomata; a smooth, merulioid, or hydnoid hymenophore; and holobasidia, and they usually develop on the underside of decaying wood. Let's break that definition down. Basidiomycetes are fungi that produce spores on cells called basidia. Specifically, crusts are basidiomycetes with basidia that don't have internal divisions called septa&mdash;they're whole (holobasidia). This corresponds to fungi in the class Agaricomycetes, a class that constitutes all the gilled mushrooms, polypores, boletes, puffballs, and chanterelles.</p>
-		</section>
-		<section>
-			<h2>Collecting Crusts</h2>
-		</section>
-		<section>
-			<h2>References</h2>
-			<p>Larsson, K.-H. (2007). Re-thinking the classification of corticioid fungi. <em>Mycological Research</em>, 111(9), 1040–1063. <a href="https://doi.org/10.1016/j.mycres.2007.08.001">DOI</a> <a href="/pdf/larsson_2007.pdf" target="_blank">PDF</a></p>
-			<p>Rosenthal, L. M., Larsson, K.-H., Branco, S., Chung, J. A., Glassman, S. I., Liao, H.-L., … Bruns, T. D. (2017). Survey of corticioid fungi in North American pinaceous forests reveals hyperdiversity, underpopulated sequence databases, and species that are potentially ectomycorrhizal. <em>Mycologia</em>, 109(1), 115–127. <a href="https://doi.org/10.1080/00275514.2017.1281677" target="_blank">DOI</a> <a href="/pdf/rosenthal-et-al_2017.pdf" target="_blank">PDF</a></p>
-		</section>
-	</main>
-	<footer></footer>
+	<section>
+		<p>Besides the old rice burnt onto the bottom of your pot, crusts&mdash;or corticioid fungi&mdash;are of great morphological and evolutionary diversity, as well as ecological importance. You can find them almost anywhere where there is wood, growing on the underside of a stick or log, on the bark of living trees, or even from the ground. They make their living as saprotrophs, eating dead organic matter, or biotrophs, gaining nutrition from a living host. In the lattter case, they can be mutualistic, resulting in reciprocal growth and survival benefits for the plant host and the fungus, or pathogenic, thriving at the expense of the plant. In many conifer forests, the majority or the most dominant ectomycorrhizal fungi are crusts (Rosenthal <em>et al.</em> 2017). While mushroom hunters often scoff at crusts, fungal ecologists increasingly appreciate their importance for forest health and ecosystem functioning.</p>
+		<p>OK, I'm a mushroom hunter, too. I'll be the first to admit that these aren't the flashiest of organisms. They are usually small and indiscrete, some nothing more than a sheen or different hue on the bottom of a decaying branch. And no, they are not edible. However, some crusts take on wild textures and colors whose evolutionary purpose defies explanation. If one dares to travel to the microscopic realms, they are greeted by truly bizarre structures like swollen oily cells, crystal-shrouded lances, and spiky clubs. To look into the microscope at a crust is to touch down on an alien planet with fractal geography and ornate constructions.</p>
+		<p>While crusts often speak for themselves, mycologists do have a technical definition for what constitutes a corticioid fungus. According to Larsson (2007), corticioid fungi are basidiomycetes with effused, resupinate basidiomata; a smooth, merulioid, or hydnoid hymenophore; and holobasidia, and they usually develop on the underside of decaying wood. Let's break that definition down. Basidiomycetes are fungi that produce spores on cells called basidia. Specifically, crusts are basidiomycetes with basidia that don't have internal divisions called septa&mdash;they're whole (holobasidia). This corresponds to fungi in the class Agaricomycetes, a class that constitutes all the gilled mushrooms, polypores, boletes, puffballs, and chanterelles.</p>
+	</section>
+	<section>
+		<h2>Collecting Crusts</h2>
+		<p>Information</p>
+	</section>
+	<section>
+		<h2>References</h2>
+		<p>Larsson, K.-H. (2007). Re-thinking the classification of corticioid fungi. <em>Mycological Research</em>, 111(9), 1040–1063. <a href="https://doi.org/10.1016/j.mycres.2007.08.001">DOI</a> <a href="/pdf/larsson_2007.pdf" target="_blank">PDF</a></p>
+		<p>Rosenthal, L. M., Larsson, K.-H., Branco, S., Chung, J. A., Glassman, S. I., Liao, H.-L., … Bruns, T. D. (2017). Survey of corticioid fungi in North American pinaceous forests reveals hyperdiversity, underpopulated sequence databases, and species that are potentially ectomycorrhizal. <em>Mycologia</em>, 109(1), 115–127. <a href="https://doi.org/10.1080/00275514.2017.1281677" target="_blank">DOI</a> <a href="/pdf/rosenthal-et-al_2017.pdf" target="_blank">PDF</a></p>
+	</section>
 </div>
 </body>
 </html>

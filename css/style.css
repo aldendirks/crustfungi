@@ -1,9 +1,9 @@
-/*CrustFungi.Com CSS Code*/
-/*-----------------------*/
-/*Written by: Alden Dirks*/
+/* CrustFungi.Com CSS Code */
+/* Written by: Alden Dirks */
 
 
-/*Site-wide Formatting*/
+/*-------------------------*/
+/* Fonts */
 
 @font-face {
 	font-family: "Peich";
@@ -25,145 +25,321 @@
 	src: url("/css/fonts/roboto/roboto-thin-italic.ttf");
 }
 
-header, main, footer {
-	margin-left: 250px;
-	font-family: Roboto-Regular, Arial, sans-serif;
+
+/*-------------------------*/
+/* Responsive Formatting */
+
+body {
+	margin: 0px;
 }
 
-main {
-	line-height: 25px;
+* {box-sizing: border-box;}
+
+/* Extra small devices (phones, 600px and down) */
+/* Responsive top navigation: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+/* Sticky top navigation: https://www.w3schools.com/css/css_navbar.asp */
+@media only screen and (max-width: 600px) {
+	.nav {
+		overflow: hidden; /* This is necessary so that the page content is below the navigation bar */
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+	.nav #logo, .nav #copyright {
+		display: none;
+	}
+	.nav a {
+		float: left; /* Adding float: left; to a display: block; element makes it act more like an inline element */
+		display: block; /* With float: left; specified, this display rule seems redundant */
+		text-align: center; /* This seems to be redundant */
+		padding: 14px 14px;
+	}
+	.nav a:not(:first-child) {
+		display: none;
+	}
+	.nav a.nav-icon {
+		float: right;
+		display: block;
+	}
+	.nav.responsive {
+		position: relative;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+	.nav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.nav.responsive .nav-icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.species-image {
+		display: none;
+	}
+	tr td:last-child, tr th:last-child {
+            display: none;
+        }
+	.species-description-content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.species-description-images {
+		margin: 20px 0px;
+	}
 }
 
-main a, footer a {
-	color: darkmagenta;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+	.nav {
+		overflow: hidden;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+	.nav #logo, .nav #copyright {
+		display: none;
+	}
+	.nav a {
+		float: left; /* Adding float: left; to a display: block; element makes it act more like an inline element */
+		display: block; /* With float: left; specified, this display rule seems redundant */
+		text-align: center; /* This seems to be redundant */
+		padding: 14px 14px;
+	}
+	.nav .nav-icon {
+		display: none;
+	}
+	.species-image {
+		display: none;
+	}
+	.species-description-content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.species-description-images {
+		margin: 20px 0px;
+	}
+} 
+
+/* Medium devices (landscape tablets, 900px and up) */
+@media only screen and (min-width: 800px) {
+	.nav {
+		width: 200px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		left: 0;
+		overflow: auto;
+		margin: 0;
+	}
+	.nav #logo, .nav #links, .nav #copyright {
+		display: block;
+	}
+	.nav a {
+		float: none;
+		text-align: left;
+		padding: 10px 40px;
+		line-height: 1;
+	}
+	.content {
+		margin-left: 200px;
+	}
+	.species-image {
+		display: none;
+	}
+	.species-description-content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.species-description-images {
+		margin: 20px 0px;
+	}
+}  
+
+/* Large devices (laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1100px) {
+	.species-image {
+		display: block;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 20px;
+		align-self: flex-start; /* <-- this is required to make an element in a flexbock sticky */
+		box-sizing: border-box;
+	}
+	.species-description-content {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	.species-description-text {
+		flex-basis: 100%;
+	}
+	.species-description-images {
+		margin: 20px 0px 0px 30px;
+		flex-basis: 50%;
+	}
 }
 
-main a:hover, footer a:hover {
-	color: crimson;
-}
 
-h1 {
-	color: #024C4C;
-}
+/*-------------------------*/
+/* Navigation Menu */
 
-h2 {
-	font-size: 20px;
-	padding-top: 10px;
-	color: teal;
-}
-
-h4 {
-	margin-left: 10px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-
-p {
-	font-size: 15px;
-}
-
-strong {
-	color: teal;
-}
-
-em {
-	font-family: Roboto-Italic, Arial, sans-serif;
-}
-
-ul {
-	margin-top: -10px;
-	font-size: 15px;
-}
-
-
-/*--------------------------------------*/
-/*Vertical menu*/
-
-.vertical-menu {
-	width: 200px;
+.nav {
 	background-color: rgb(237, 237, 237);
 	font-family: Peich, Arial, sans-serif;
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	z-index: 100;
+	z-index: 1;
 }
 
-.vertical-menu #logo {
+.nav #logo {
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
 
-.vertical-menu #logo p {
+.nav #logo img {
+	width: 175px;
+	opacity: .85;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav #logo p {
 	font-size: 50px;
 	text-align: center;
+	color: #2E2E2E;
 	margin: 0;
+	padding-top: 10px;
 	line-height: .5;
-	padding-top: 10px;
 }
 
-.vertical-menu #logo img {
-	padding-left: 15px;
-	width: 175px;
-}	
-
-.vertical-menu #links {
-	width: 200px;
+.nav a {
+	color: #2E2E2E;
+	text-decoration: none;
+	font-size: 28px;
 }
 
-.vertical-menu #links a {
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 45px;
-	padding-right: 0;
-	display: block;
-	color: black;
-    text-decoration: none;
-	font-size: 23px;
-}
-
-.vertical-menu #links a:hover {
+.nav a:hover {
 	background-color: teal;
 	color: white;
+	}
+
+.nav .nav-icon {
+	padding: 0px; /* This ensures that the menu icon ccontainer doesn't have any clickable space that doesn't animate the icon */
+	margin-top: 14px;
+	margin-right: 20px;
 }
 
-.vertical-menu #copyright {
-	width: 200px;
-	position: absolute;
-	top: 650px;
-	bottom: 0;
+.menu {
+	display: inline-block;
+	cursor: pointer;
+	margin: -10px 0px; /* This is to prevent the menu from having extra space due to the 6px margins of the nav icon bars (see below), which is clickable but doesnt animate */
+	padding: 6px; /* More padding leads to more clickable space */
 }
 
-.vertical-menu #copyright p {
-	position: absolute;
-	bottom: 5px;	
-	padding-left: 40px;
+.menu:hover {
+	background-color: rgb(237, 237, 237);
+}
+
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #2E2E2E;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.menu:hover .bar1, .menu:hover .bar2, .menu:hover .bar3 {
+	background-color: teal;
+}
+
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.nav #copyright {
+	flex-shrink: 0;
+	margin-top: auto;
+}
+
+.nav #copyright p {
 	font-size: 18px;
+	color: #2E2E2E;
+	border-top: 2px solid #ccc;
+	vertical-align: bottom;
+	text-align: center;
+	padding-top: 10px;
 }
 
-.vertical-menu #copyright hr {
-	position: absolute;
-	bottom: 50px;
-	width: 100%;
-	border-top: 1px solid #ccc;	
+
+/*-------------------------*/
+/* Site-wide Content Formatting */
+
+.content {
+	padding-left: 25px;
+	padding-right: 25px;
+	display: flex;
+	flex-direction: column;
+	font-family: Roboto-Regular, Arial, sans-serif;
+}
+
+.content h1 {
+	color: #024C4C;
+	border-bottom: 2px solid rgba(2,76,76,.70);
+	padding-bottom: 5px;
+}
+
+.content h2 {
+	font-size: 20px;
+	padding-top: 20px;
+	color: teal;
+}
+
+.content p {
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.content a {
+	color: darkmagenta;
+}
+
+.content a:hover {
+	color: crimson;
+}
+
+.content strong {
+	color: teal;
 }
 
 
-/*-------------------------------------*/
-/*Splash Page*/
+/*-------------------------*/
+/*Home Page*/
 
 .splash {
 	box-sizing: border-box;
 	position: fixed;
 	overflow-y: hidden;
-	margin-left: 200px;
 	margin-top: -6px;
+	margin-left: -25px;
 	height: 100%;
 }
 
@@ -216,264 +392,61 @@ ul {
 }
 
 
-/*-------------------------------------*/
-/*Introduction Page*/
-
-.introduction {
-	min-width: 750px;
-	margin-right: 40px;
-}
-
-.introduction h1 {
-	border-bottom: 2px solid rgba(2,76,76,.70);
-	padding-bottom: 5px;
-}
-
-
-/*-------------------------------------*/
+/*-------------------------*/
 /*Species Page*/
-
-.species {
-	min-width: 950px;
-	margin-right: 40px;
-}
-
-.species h1 {
-	border-bottom: 2px solid rgba(2,76,76,.70);
-	padding-bottom: 5px;
-}
 
 .species-flex {
 	display: flex;
+	flex-direction: row;
 }
 
 .species-text {
-	min-width: 400px;
+	flex-basis: 60%;
 }
 
-.species-text .synonymy {
-	margin-left: 15px;
-	margin-top: -5px;
-	font-size: 14px;
+p.synonymy {
+	padding-left: 10px;
+	font-size: 13px;
 	color: darkslategray;
 }
 
 .binomial-flex {
 	display: flex;
+	flex-direction: row;
 }
 
-.binomial-genus {
+.binomial-genus p {
 	min-width: 150px;
-	margin-right: 25px;
-	margin-top: -15px;
-	margin-bottom: -5px;
+}
+
+.binomial-genus p {
+	margin: 0px;
 	color: teal;
 }
 
 .binomial-epithet {
-	padding-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .binomial-epithet p {
 	margin: 0px;
 }
 
-.species-image {
-	position: -webkit-sticky;
-  	position: sticky;
-  	top: 20px;
-  	align-self: flex-start; /* <-- this is required to make an element in a flexbock sticky */
-	min-width: 400px;
-	box-sizing: border-box;
-}
-
 .species-image img {
+	width: 100%;
+	height: auto;
 	border: 2px solid rgba(2,76,76,.70);
 }
 
 .species-image p {
-	margin-top: -8px;
+	margin-top: -7px;
 	font-size: 15px;
 	font-style: italic;
 }
 
 
-/*-------------------------------------*/
-/*Phylogeny Page*/
-
-.phylogeny {
-	min-width: 750px;
-	margin-right: 40px;
-}
-
-.phylogeny h1 {
-	border-bottom: 2px solid rgba(2,76,76,.70);
-	padding-bottom: 5px;
-}
-
-
-/*-------------------------------------*/
-/*Glossary Page*/
-
-.glossary {
-	min-width: 750px;
-	margin-right: 40px;
-}
-
-.glossary h1 {
-	border-bottom: 2px solid rgba(2,76,76,.70);
-	padding-bottom: 5px;
-}
-
-
-/*-------------------------------------*/
-/*About Page*/
-
-.about {
-	min-width: 750px;
-	margin-right: 40px;
-}
-
-.about h1 {
-	border-bottom: 2px solid rgba(2,76,76,.70);
-	padding-bottom: 5px;
-}
-
-.about-flex-container {
-	display: flex;
-}
-
-.about-page{
-	order: 1;
-	min-width: 700px;
-	margin-right: 50px;
-	margin-top: -20px;
-	text-align: left;
-}
-
-.about-profile {
-	order: 2;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 20px;
-	align-self: flex-start; /* <-- this is the fix */
-	width: 200px;
-	margin-top: 10px;
-}
-
-.about-profile img {
-	display: block;
-	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.about-profile #AldenDirksPicture {
-	border: 6px solid teal;
-	border-radius: 200px;
-}
-
-.about-footer {
-	font-size: 14px;
-}
-
-.about-footer hr {
-	width: 100%;
-	border-top: 1px solid #ccc;	
-}
-
-
-/*-------------------------------------*/
-/*Species Description Page*/
-
-.banner {
-	min-width: 870px;
-	margin-left: 200px;
-	margin-top: 0px;
-	margin-right: 10px;
-	overflow-x: hidden;
-	opacity: 0.75;
-	filter: alpha(opacity = 0.75); /* For IE8 and earlier */
-}
-
-.banner img {
-	height: 200px;
-}
-
-.species-name {
-	margin-top: -5px;
-	color: #004C59;
-}
-
-.taxonomy {
-	margin-top: -15px;
-	font-size: 12px;
-}
-
-.taxonomy img{
-	vertical-align: middle;
-	padding-left: 10px;
-}
-
-.species-description-header {
-	border-bottom: 1px solid #ccc;	
-	min-width: 700px;
-}
-
-.species-description-content{
-	display: flex;
-	align-items: flex-start;
-}
-
-.species-description-text {	
-	min-width: 500px;
-	text-align: justify;
-	position: -webkit-sticky;
-	position: sticky;
-	align-self: flex-end;
-	bottom: 0;
-}
-
-.species-description-images {
-	width: 275px;
-	margin-top: 20px;
-	margin-left: 40px;
-	margin-right: 10px;
-	margin-bottom: -10px;
-}
-
-.species-description-images img { 
-	width: 275px;
-	padding-bottom: 10px;
-}
-
-.species-description-images p { 
-	margin-top: -10px;
-	padding-bottom: 5px;
-	font-size: 13px;
-	line-height: 1.25;
-}
-
-.species-description-footer {
-	margin-top: 40px;
-	margin-left: -5px;
-	padding-left: 5px;
-	font-family: Roboto-Thin-Italic;
-}
-
-
-/*-------------------------------------*/
+/*-------------------------*/
 /*Literature Page*/
-
-.literature {
-	min-width: 750px;
-	margin-right: 40px;
-}
-
-.literature h1 {
-	border-bottom: 2px solid rgba(2,76,76,.70);
-	padding-bottom: 5px;
-}
 
 table {
 	border-collapse: collapse;
@@ -481,6 +454,7 @@ table {
 	width: 100%;
 	border: 1px solid #ddd;
 	counter-reset: rowNumber; /*part of code to automatically number row*/
+	margin-bottom: 10px;
 }
 
 th {
@@ -507,3 +481,65 @@ tr td:first-child::before {
 	min-width: 1em;
 	margin-right: 0.5em;
 } /*part of code to automatically number row*/
+
+
+/*-------------------------*/
+/* Species Description */
+
+.banner {
+	margin-left: -25px;
+	margin-right: -25px;
+}
+
+.banner img {
+	width: 100%;
+	height: auto;
+	opacity: .8;
+	filter: alpha(opacity = 0.75); /* For IE8 and earlier */
+}
+
+.species-description header {
+	border-bottom: 1px solid teal;
+}
+
+.species-description h1 {
+	border-bottom: 0px;
+}
+
+.species-name {
+	color: #004C59;
+}
+
+.taxonomy {
+	margin-top: -10px;
+}
+
+.taxonomy img {
+	vertical-align: middle;
+	padding-left: 10px;
+}	
+
+.species-description-text {	
+	text-align: justify;
+	position: -webkit-sticky;
+	position: sticky;
+	align-self: flex-end;
+	bottom: 0;
+}
+
+.species-description-images img { 
+	width: 100%;
+	height: auto;
+}
+
+.species-description-images p { 
+	font-size: 14px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.species-description-footer {
+	margin-top: 25px;
+	font-family: Roboto-Thin-Italic;
+}
