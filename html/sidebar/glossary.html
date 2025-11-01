@@ -1,133 +1,304 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135441904-1"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-135441904-1');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glossary of Mycological Terms | CrustFungi.Com</title>
-<meta name="description" content="Consult the glossary of mycological terms at CrustFungi.Com.">
-<link rel="stylesheet" href="/css/style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
-<script src="/js/handlebarsNavBar.js"></script>
-<!--faviconit.com favicon generator-->
-<link rel="shortcut icon" href="/images/favicon/favicon.ico">
-<link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon/favicon.ico">
-<link rel="icon" type="image/png" sizes="196x196" href="/images/favicon/favicon-192.png">
-<link rel="icon" type="image/png" sizes="160x160" href="/images/favicon/favicon-160.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon-64.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16.png">
-<link rel="apple-touch-icon" href="/images/favicon/favicon-57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/favicon-114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/favicon-72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/favicon-144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/favicon-60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/favicon-120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/favicon-76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/favicon-152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon-180.png">
-<meta name="msapplication-TileColor" content="#FFFFFF">
-<meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
-<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+	<!-- Google Analytics - global site tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135441904-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-135441904-1');
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Glossary | CrustFungi.Com</title>
+	<meta name="description" content="Consult the glossary of mycological terms at CrustFungi.Com.">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+	<script src="/js/handlebarsNavBar.js"></script>
+	<!-- faviconit.com favicon generator -->
+	<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/images/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/images/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="/images/favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+	<!---->
 </head>
-	
 <body>
-<div class="nav" id="responsive-nav">
-	<div id="logo">
-		<script id="logo-template" type="text/x-handlebars-template">
-			<p>CRUST</p>
-			<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
-			<p>FUNGI</p>
-		</script>
-	</div>
-	<div id="links">
-		<script id="links-template" type="text/x-handlebars-template">
-			{{{links}}}
-		</script>
-		<script src="/js/activateNavIcon.js"></script>
-		<script src="/js/animateNavIcon.js"></script>
-	</div>
-	<div id="copyright">
-		<script id="copyright-template" type="text/x-handlebars-template">
-			<p>&copy; {{copyright}} ALDEN DIRKS</p>
-		</script>
-	</div>
-</div>
-	
-<div class="content glossary">
-	<header>
-		<h1>Glossary of Mycological Terms</h1>
-	</header>
-	<section>
-		<p><strong>Aphyllophorales</strong> - An old-school category (an obselete order) for homobasidiomycetes (fungi with non-septate basidia) without gills, which included crust fungi, polypores, coral mushrooms, and others, but excluded puffballs, which were given there own order (also obsolete) called Gasteromycetales. See the <a href="/html/sidebar/phylogeny.html">Phylogeny page</a> for the history of fungal classification.</p>
-		<p><strong>Basidium (pleural: basidia)</strong> - The sexually reproductive cell characteristic of fungi in the phylum Basidiomycota (and therefore, all crust fungi). Basidia vary enormously in their form, but they all have sterigmata (horn-like projections) upon which basidiospores are formed, like a balloon being blown up.</p>
-		<p><strong>Basidiospores</strong> - Haploid propagative cells (spores) formed via meiosis (sexual reproduction) on the sterigmata of basidia. Basidiospores contrast with chlamydospores, which are asexual spores formed via mitosis (no genetic recombination) produced by some basidiomycetes. Most basidiospores are ballistospores, referring to their method of ection achieved through a <a href="https://pringlelab.botany.wisc.edu/documents/Ballistospore.pdf" target="_blank">very neat feat of biophysics</a> in which the surface tension of a tiny drop of liquid breaks causing the spore to launch off into space.</p>
-		<p><strong>Basidioma (pleural: basidiomata)</strong> - The "fruiting body", or more accurately, sporocarp, of a basidiomycete fungus; in other words, the sexually reproductive component of a basidiomycete. This contrasts with the "vegetative body" of the fungus, the mycelium, a collection of hyphae that "eat" by digesting organic matter in the surroundings and absorbing the yummy breakdowns. Note that since fungi were originally thought of as plants and not their own kingdom (evolutionarily speaking, they are more similar to animals, sharing a more recent common ancestor with humans than they do with squash), much of the colloquial terminology is adapted from plant-speak. When reviewing the terminology below, recognize that multiple terms can apply to a basidioma. For example, a basidioma could be orbicular and resupinate (round and fully attached to the substrate), but some terms are mutually exclusive, like effused and orbicular, as they refer to opposite growth patterns</p>
-		<ul>
-			<li><b>Cupulate</b> - basidioma growing as a cup-like structure</li> 
-			<li><b>Decorticant</b> - basidioma developing under bark, with the bark pulling away exposing the basidioma when mature</li>
-			<li><b>Effused</b> - in normal speak, effuse is a verb that means "to exude, to flow out, to pour forth", capturing well the structure of many basidiomata; effused fruiting bodies are spread out over the substrate without a regular form or a pileus, which contrasts with orbicular (circular) basidiomata, for example</li>
-			<li><b>Effused-reflexed</b> - basidioma spreading over the substrate (effused) and then turning back (reflexed) at the margin forming a pileus (cap)</li>
-			<li><b>Orbicular</b> - basidioma circular in shape</li>
-			<li><b>Resupinate</b> - basidioma fully attached to the substrate, not forming a shelf-like cap </li>
-			<li><b>Stipitate</b> - pileate basidioma with a stipe (a sporocarp with a stem and cap)</li>
-		</ul>
-		<p><strong>Corticioid fungi</strong> - Also called crust fungi, corticioid fungi are "basidiomycetes with effused basidiomata, a smooth, meruloid, or hydnoid hymenophore, and holobasidia" (Larsson 2007). Let's break that down. Crusts are fungi that produce simple sporocarps (in other words, fruiting bodies or mushrooms) that lay flat against the substrate, usually on the bottom of a piece of wood; have a fertile surface that is either smooth, wrinkled, or with teeth-like projections (or of intermediate form); and produce spores on special reproductive cells called basidia that are not divided by septa. Note that corticioid fungi are a form group, meaning crusts are not necessarily closely related to one other. Many fungi have converged upon a crust-like growth form to spread their spores. What one calls a crust or not a crust can sometimes be arbitrary; the definition above is not absolute. For example, some poroid resupinate fungi are generally considered to be crusts, as well as non-resupinate fungi with a smooth hymenium.</p>
-		<p><strong>Corticiology</strong> - The scientific study of corticioid fungi.</p>
-		<p><strong>Cystidium (pleural: cystidia)</strong> - A sterile cell (one that does not produce spores) embedded within or projecting out of the hymenium, sometimes covered with crystals of calcium oxalate. There is an enormous diversity of cystidia and they are often very important microscopic features for identification of crust fungi. There is different terminology referring to the location, origin, and type of the cystidium.</p>
-		<h4><strong><em>Location</em></strong></h4>
-		<ul>
-			<li><b>Chelocystidia</b> - cystidia on the edge of a gill</li>
-			<li><b>Pleurocystidia</b> - cystidia on the face of a gill</li>
-		</ul>
-		<h4><em><strong>Origin</strong></em></h4>
-		<ul>
-			<li><b>Hymenial cystidia</b> - cystidia arising in the hymenium or subhymenium</li>
-			<li><b>Pseudocystidia </b> - cystidia arising from the trama or subiculum</li>
-		</ul>
-		<h4><em><strong>Types</strong></em></h4>
-		<ul>
-			<li><b>Astrocystidia (also called asterocystidia)</b> - </li>
-			<li><b>Gloeocystidia</b> -</li>
-			<li><b>Halocystidia</b> -</li>
-			<li><b>Lagenocystidia</b> - </li>
-			<li><b>Lamprocystidia (also called metuloids)</b> -</li>
-			<li><b>Leptocystidia</b> -</li>
-			<li><b>Lyocystidia</b> - </li>
-			<li><b>Septocystidia</b> - multicellular cystidia with septa (barriers between cells)</li>
-			<li><b>Subulate cystidia</b> - cystidia that taper to a point, when encircled by rectangular crystals characteristic of the genus <em>Subulicystidium</em></li>
-		</ul>
-		<p><strong>Homobasidiomycetes</strong> - An old-school term that is synonymous with Agaricomycetes, the class that contains corticioid fungi, in the subphylum Agaricomyctina and the phlyum Basidiomycota, originally referring to basidiomycetes whose basidia are not septate. This contrasts with the rusts, smusts, and jelly fungi, which were called heterobasidiomycetes.</p>
-		<p><strong>Mushroom odors</strong> - Mushrooms can delight or sour the nostrils with their strange odors.</p>
-		<ul>
-			<li><b>Odor</b> - </li>
-			<li><b>Odor</b> -</li>
-		</ul>
-		<p><strong>Pileipellis (plural: pileipelles)</strong> - The uppermost layer of hyphae in the pileus (cap) of a fungal sporocarp; in other words, the outermost "skin" of hyphae covering the trama (flesh) of the cap. The terms <em>cuticle</em> and <em>pileipellis</em> are essentially synonymous, however the first is used in reference to the layer as a macroscopic object ("can I peel the cuticle off this mushroom?") and the latter as a microscopic object ("how are the hyphae arranged in the pileipellis of this mushroom?"). Note that most crusts don't have caps and therefore don't have a pileipellis. Even if the pileipellis isn't the most important feature for identification of crusts (unlike boletes where it can be crucial), the following terminology referring to different types of pileipelles is sometimes important to know.</p>
-		<ul>
-			<li><b>Cutis</b> - hyphae are arranged parallel to the cap's surface; when the hyphae are gelatinized, a cutis pileipellis is referred to as an <em>ixocutis</em></li>
-			<li><b>Epithelium</b> - hyphae arise perpendicular to the cap surface and are swollen and frequently septate, also described <a href="https://books.google.com/books?id=JYObgVVjb9EC&pg=PA23&lpg=PA23&dq=palisadoderm+vs+hymeniderm&source=bl&ots=jJKlWAgZoW&sig=tbYL-I3Iqn2HL96vRHbKNlUpbmg&hl=en&sa=X&ved=0ahUKEwj6xraXj6XcAhVDWK0KHST0BoMQ6AEIKzAA#v=onepage&q=palisadoderm%20vs%20hymeniderm&f=false">"as erect chains of globose elements"</a></li>
-			<li><b>Hymeniderm (or hymeniform)</b> - hyphae arise perpendicular to the cap surface and are club shaped and inflated resembling immature basidia</li>
-			<li><b>Palisadoderm</b> - like a hymeniderm, except the hyphae are arranged in a looser pattern  and are not so even in height, according to this <a href="https://books.google.com/books?id=JYObgVVjb9EC&pg=PA23&lpg=PA23&dq=palisadoderm+vs+hymeniderm&source=bl&ots=jJKlWAgZoW&sig=tbYL-I3Iqn2HL96vRHbKNlUpbmg&hl=en&sa=X&ved=0ahUKEwj6xraXj6XcAhVDWK0KHST0BoMQ6AEIKzAA#v=onepage&q=palisadoderm%20vs%20hymeniderm&f=false">source</a></li>
-			<li><b>Trichoderm</b> - hyphae arise perpendicular to the cap surface; when the hyphae are gelatinized, a trichoderm pileipellis is referred to as an <em>ixotrichoderm</em></li>
-		</ul>
-		<p><strong>Septum (pleural: septa)</strong> - A wall that separates one cell from another in a mycelium and basidioma, sometimes bridged by a clamp connection formed during the mitotic reproduction of nuclei and their allocation between two cells; fungi without septa are called <em>aseptate</em> or <em>coenocytic</em>.</p>
-	</section>
-	<section>
-		<div class="references">
-			<h2>References</h2>
-			<p>Kuo, M. &amp; Methven, A.S. <em>Mushrooms of the Midwest.</em> University of Illinois Press, 2014</p>
-			<p>Larsson, K.-H. (2007). Re-thinking the classification of corticioid fungi. <em>Mycological Research</em>, 111(9), 1040-1063. <a href="/pdf/larsson_2007.pdf">PDF</a></p>
+	<div class="body-flex-container">
+		<div class="nav" id="responsive-nav">
+			<div id="logo">
+				<script id="logo-template" type="text/x-handlebars-template">
+					<p>CRUST</p>
+					<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
+					<p>FUNGI</p>
+				</script>
+			</div>
+			<div id="links">
+				<script id="links-template" type="text/x-handlebars-template">
+					{{{links}}}
+				</script>
+				<script src="/js/activateNavIcon.js"></script>
+				<script src="/js/animateNavIcon.js"></script>
+			</div>
+			<div id="copyright">
+				<script id="copyright-template" type="text/x-handlebars-template">
+					<p>&copy; {{copyright}} ALDEN DIRKS</p>
+				</script>
+			</div>
 		</div>
-	</section>
-</div>
+		<div class="content glossary">
+			<header>
+				<h1>Glossary of Mycological Terms</h1>
+			</header>
+			<section>
+				<p id="glossary-abhyemnial-surface"><strong>Abhymenial surface:</strong> The sterile upper surface of an effused-reflexed or pileate crust (see <a href="#glossary-basidioma">basidioma</a>).</p>
+				<hr>
+				<p id="glossary-aphyllophorales"><strong>Aphyllophorales:</strong> Obsolete taxonomic category for <a href="#glossary-homobasidiomycete">homobasidiomycetes</a> without gills ("a-" prefix meaning "not, without"; "phyllo" meaning "a leaf, leaf-like", i.e. gills), which included crust fungi, polypores, coral mushrooms, and others, but excluded puffballs, which were given there own (also now-obsolete) category called "Gasteromycetales".</p>
+				<hr>
+				<p id="glossary-anamorph"><strong>Anamorph:</strong> Asexual fruiting body of a fungus (contrast with <a href="#glossary-teleomorph">teleomorph</a>, the sexual fruiting body). In the past, anamorphs and teleomorphs of the same species were each given their own Latin binomial, either because mycologists didn't know they belonged to the same species or because it was convenient to refer to them separately. The "one fungus, one name" movement in mycology has done away with this convention although old names still float around (for example, <em>Haplotrichum</em> in reference to the anamorphs of <em>Botryobasidium</em> species; Rossman et al. 2016).</p>
+				<hr>
+				<p id="glossary-apiculus"><strong>Apiculus:</strong> Also called the <strong>hilar appendix</strong>, an apiculus is a short protrusion at the end of a <a href="#glossary-basidiospore">basidiospore</a> where the basidiospore attaches to the sterigma. <strong>Apiculate</strong> is a descriptor for a basidiospore with a well defined apiculus.</p>
+				<hr>
+				<p id="glossary-basidioma"><strong>Basidioma/e (plural: basidiomata):</strong> Also called basidiocarp, fruiting body, or mushroom, the basidioma is the macroscopic sexually reproductive structure of basidiomycete fungi. Basidiomata are highly variable in size, shape, texture, and color. While the bulk of any filamentous fungus exists as mycelium in the substrate, fungal identification and taxonomy relies almost exclusively on the (typically) ephemeral basidiomata. Basidiocarps are often <strong>annual</strong> (persisting for less than one year) but some are <strong>perennial</strong> (persisting for multiple years). Resupinate basidiocarps consist of a <strong>hymenium</strong> (outermost fertile layer with the basidia and sterile structures such as cystidia, also called the spore-bearing surface), <strong>subhymenium</strong> (layer of hyphae below the basidia, sometimes compact and strongly branched, may be lacking in very thin crusts), <strong>trama</strong> (layer of tissue supporting the subhymenium and hymenium, but only used for hymenophores that are poroid, hydnoid, etc. but not smooth or even ones), and <strong>subiculum</strong> (hyphae next to the substrate, mostly growing parallel to the substrate and typically wider and thicker than the subhymenial hyphae). If the basidiome is anything other than effused, it will have an abhymenial surface (surface of the cap), which can be smooth or hairy. For descriptors of abhymenial surface hairiness, see <a href="#glossary-hymenophore-consistency">hymenophore consistency</a>. In addition to their growth form, basidiomata are further described by their <a href="#glossary-hymenophore">hymenophore</a> and <a href="#glossary-margin">margin</a>.</p>
+				<h3>Growth form</h3>
+				<ul>
+					<li><strong>Effused</strong> &mdash; a completely resupinate basidioma and therefore one with no sterile surfaces except for the margin; entirely adherent to the substrate</li>
+					<li><strong>Orbicular</strong> &mdash; circular</li>
+					<li><strong>Effused-reflexed</strong> &mdash; an effused basidioma whose margin grows away from the substrate to form a small cap, or pileus (reflexed margin)</li>
+					<li><strong>Cupulate</strong> or <strong>discoid</strong> &mdash; an orbicular, effused-reflexed crust that takes on the appearance of a cup fungus</li>
+					<li><strong>Dimidiate</strong> &mdash; fan-shaped pileus</li>
+					<li><strong>Stipitate</strong> &mdash; basidioma with a stem, or stipe</li>
+					<li><strong>Decorticant</strong> &mdash; basidioma that develops under bark and then pulls up and away when mature</li>
+				</ul>
+				<hr>
+				<p id="glossary-basidiospore"><strong>Basidiospore:</strong> The sexual, propagative spore of basidiomycete fungi. Basidiospores are produced via meiosis and are born on the sterigmata of basidia, usually with four basidiospores produced per basidium, but varying between one and eight. The number of basidiospores per basidium as well as their size, shape, ornamentation, wall thickness (<strong>thin-walled</strong> or <strong>thick-walled</strong>), color (<strong>hyaline</strong> or <strong>colored</strong>), and any chemical reactions are all important for species identification. Wall thickness is very subjective, but in general if you can make out a distinct wall around the spore, it would be considered thick-walled. Hyaline spores are see-through or transparent.</p>
+				<h3>Size</h3>
+				<p>One should always measure mature, liberated basidiospores rather than basidiospores that are attached to sterigmata, which might not be fully developed and therefore be smaller than what's reported in the literature. This can be ensured by measuring basidiospores that have been naturally released from basidia in the formation of a spore print. Try to measure basidiospores that are "flat" (not askew, which throws off length) and make sure to exclude the <a href="#glossary-apiculus">apiculus</a> and ornamentations in your measurements. I try to measure 30 basidiospores per specimen. This can be done quickly from a spore print. The basidiospore quotient is the length to width ratio, which is tabulated for each spore. In the species profiles, I report sizes as the mean &#x00B1; one standard deviation surrounded by the minimum and maximum measurements in parantheses.</p>
+				<h3>Shape</h3>
+				<p>The following terminology presents a standardized set of terms to discuss basidiospore shape as a function of the basidiospore quotient.</p>
+				<ul>
+					<li><strong>Globose</strong> &mdash; Q = 1&ndash;1.05</li>
+					<li><strong>Subglobose</strong> &mdash; Q = 1.05&ndash;1.15</li>
+					<li><strong>Broadly ellipsoid</strong> &mdash; Q = 1.15&ndash;1.3</li>
+					<li><strong>Ellipsoid</strong> &mdash; Q = 1.3&ndash;1.6</li>
+					<li><strong>Cylindrical</strong> &mdash; Q = 1.6&ndash;2</li>
+					<li><strong>Narrowly cylindrical</strong> &mdash; Q = 2&ndash;3</li>
+					<li><strong>Allantoid</strong> &mdash; Q = 3&ndash;4</li>
+					<li><strong>Fusiform</strong> &mdash; Q = 4&ndash;6</li>
+				</ul>
+				<p>Other shapes that are not defined by basidiospore quotient, or might apply to any shape designated above, are as follows:</p>
+				<ul>
+					<li><strong>Curved</strong> or <strong>sausage-shaped</strong> &mdash; bent; allantoid is sometimes used to refer to sausage-shaped spores regardless of their quotient</li>
+					<li><strong>Amygdaliform</strong> &mdash; almond-shaped</li>
+					<li><strong>Fusoid</strong> &mdash; tapered and point on both ends</li>
+					<li><strong>Lacrymoid</strong> &mdash; shaped like a tear drop, specifically one with a somewhat curved tip</li>
+					<li><strong>Ovate</strong> &mdash; oval-shaped</li>
+					<li><strong>Pyriform</strong> &mdash; pear-shaped</li>
+					<li><strong>Navicular</strong> &mdash; boat-shaped, like a row boat in profile</li>
+					<li><strong>Reniform</strong> &mdash; kidney-shaped</li>
+					<li><strong>Tetrahedral</strong> &mdash; shaped like a triangular pyramid</li>
+				</ul>
+				<h3>Ornamentation</h3>
+				<ul>
+					<li><strong>Smooth</strong> &mdash; no ornamentations</li>
+					<li><strong>Asperulate</strong> &mdash; roughened by many small points or warts</li>
+					<li><strong>Echinulate</strong> &mdash; roughened with small spines or prickles</li>
+					<li><strong>Tuberculate</strong> &mdash; roughened with small rounded projections or protuberances</li>
+					<li><strong>Warted</strong> &mdash; roughened by relatively large protuberances</li>
+					<li><strong>Striate</strong> &mdash; coated with linear ridges</li>
+				</ul>
+				<hr>
+				<p id="glossary-basidium"><strong>Basidium (plural: basidia):</strong> The sexually reproductive cell characteristic of fungi in the phylum Basidiomycota (and therefore, all crust fungi) where karyogamy of the two haploid nuclei and meiosis occur leading to the production of basidiospores. Basidia vary greatly in their form, but they all have <a href="#glossary-sterigma">sterigmata</a> (horn-like projections on the apical part of a basidium, usually with four sterigmata per basidium but varying from one to eight) upon which basidiospores are formed like inflating balloons. In addition to number of sterigmata per basidium, the presence or absence of a <a href="#glossary-septum">basal clamp</a> is important for identification as well as the traits listed below. I try to measure 10 basidia, from the basal septum to the apex (excluding the sterigmata), with the width taken at the widest part.</p>
+				<h3>Internal septation</h3>
+				<ul>
+					<li><strong>Holobasidium</strong> &mdash; basidium without septa, most common type and defining feature of <a href="#glossary-homobasidiomycete">homobasidiomycetes</a></li>
+					<li><strong>Phragmobasidium</strong> &mdash; basidium divided by septa (<em>i.e.</em>, a multicellular basidium); septa can cut across the basidium horizontally (transversely) or vertically (cruciate); infrequent in crusts, defining feature of <a href="#glossary-heterobasidiomycete">heterobasidiomycetes</a></li>
+				</ul>
+				<h3>Type</h3>
+				<ul>
+					<li><strong>Terminal</strong> or <strong>apical</strong> &mdash; formed at the end of a generative hypha</li>
+					<li><strong>Pleural</strong> &mdash; laterally formed from a generative hypha and with an enlarged, sometimes bifurcate base</li>
+					<li><strong>Repetitive</strong> &mdash; basidum that originates from older basidia via internal repetition, with the older basidia remaining as a sheeth around the base of the new basidium</li>
+				</ul>
+				<h3>Shape</h3>
+				<ul>
+					<li><strong>Cylindrical</strong> &mdash; relatively constant width across the entire basidium</li>
+					<li><strong>Clavate</strong> &mdash; shaped like a club</li>
+					<li><strong>Constricted</strong> &mdash; basidium with pinched sections</li>
+					<li><strong>Urniform</strong> &mdash; shaped like an urn</li>
+					<li><strong>Utriform</strong> &mdash; shaped like a leather bottle (one with a central constriction)</li>
+					<li><strong>Stalked</strong> &mdash; basidium subtended by an elongated stalk</li>
+					<li><strong>Subglobose</strong> &mdash; short, squat, nearly round basidium</li>
+				</ul>
+				<hr>
+				<p id="glossary-bladder"><strong>Bladder structure:</strong> A very strange type of sterile structure in the hymenium. <strong>Echinocysts</strong> consist of a rounded bladder covered with sparse, blunt projections. <strong>Stephanocysts</strong> are crowned pedestals that suspend a sphere of homogenous fluid.</p>
+				<hr>
+				<p id="glossary-corticioid-fungus"><strong>Corticioid fungus:</strong> Also called crust or crust fungus, a basidiomycete whose basidioma is generally <a href="#glossary-resupinate">resupinate</a> (see the <a href="/html/sidebar/introduction.html">introduction</a>).</p>
+				<hr>
+				<p id="glossary-cystidium"><strong>Cystidium (plural: cystidia):</strong> A sterile cell, embedded or projecting from the hymenium, differently shaped from the basidia. Cystidia are very useful for identification, but their adaptive function is largely a mystery.</p>
+				<h3>Location</h3>
+				<ul>
+					<li><strong>Cheilocystidia</strong> &mdash; occuring on the edges of the gills or pores, sometimes conferring a distinct color</li>
+					<li><strong>Pleurocystidia</strong> &mdash; occurring on the faces of the gills or inside the pores</li>
+					<li><strong>Dermatocystidia</strong> or <strong>pileocystidia</strong> &mdash; occurring on the surface of the cap</li>
+					<li><strong>Circumcystidia</strong> &mdash; occurring on the margin of the cap</li>
+					<li><strong>Caulocystidia</strong> - occurring on the stipe</li>
+				</ul>
+				<h3>Origin</h3>
+				<ul>
+					<li><strong>Hymenial cystidia</strong> &mdash; arising in the hymenium or subhymenium</li>
+					<li><strong>Pseudocystidia</strong> &mdash; arising from the trama or subiculum</li>
+					<li><strong>Skeletocystidia</strong> &mdash; originating from the terminal, enlarged part of skeletal hyphae</li> 
+				</ul>
+				<h3>Form</h3>
+				<ul>
+					<li><strong>Hyphocystidia</strong> &mdash; very simple hypha-like cystidia originating in the subhymenium and projecting beyond the hymenium, akin to paraphyses</li>
+					<li><strong>Leptocystidia</strong> &mdash; most common type of hymenial cystidia, thin to moderately thick-walled, cylindrical to fusoid to conical, sometimes encrusted</li>
+					<li><strong>Gloeocystidia</strong> &mdash; hymenial cystidia or pseudocystidia, tubular or vesicular, often sinuous or constricted along their length, with thin walls and abundant hyaline or yellowish oily content in the cytoplasm</li>
+					<li><strong>Moniliform cystidia </strong> or <strong>torulose cystidia</strong> &mdash; regularly constricted leptocystidia or gloeocystidia, like a string of beads</li>
+					<li><strong>Capitate cystidia</strong> &mdash; cystidia with a distinct apical swelling; subcapitate is used to refer to only slightly apically swollen cystidia</li>
+					<li><strong>Septocystidia</strong> &mdash; cystidia with regular septa, often with clamp connetions, typically cylindrical, thin- or thick-walled</li>
+					<li><strong>Lyocystidia</strong> &mdash; distinct cystidia characteristic of some genera (e.g., <em>Dacryobolus</em>, <em>Litschauerella</em>, <em>Odonticium</em>, <em>Tubulicium</em>, <em>Tubulicrinis</em>) in <em><em>Hydnodontaceae</em></em> and <em><em>Tubulicrinaceae</em></em> consisting of very thick, refractive walls, a small capillary cytoplasm, which widens abruptly at the apex forming a tip, and two or more rooting hyphae; the walls dissolve in KOH, which is an example of why crusts should always be observed in tap water in addition to other mounting media</li>
+					<li><strong>Lamprocystidia</strong> or <strong>metuloids</strong> &mdash; cystidia consisting of a basal part with thin walls and a large lumen, and an apical part that is thick-walled and conical with a thin, capillary lumen and extensive encrustations; not always distinguishable from thick-walled, encrusted leptocystidia</li>
+					<li><strong>Subulate cystidia</strong> or <strong>subulicystidia</strong>&mdash; in its most basic form, cystidia that taper to a point like an awl, but also specialized cystidia in the genus <em>Subulicystidium</em> that consist of a hypha protruding from a needle-tipped, thick-walled crystalline sheath oranmented with regular, rectangular encrustations</li>
+					<li><strong>Lageniform cystidia</strong> &mdash; cystidia with a broad basal part and needle-like, encrusted apical part, like a bottle brush</li>
+					<li><strong>Astrocystidia</strong> or <strong>asterocystidia</strong> &mdash; cystidia with a star- or pompom-like cluster of crystals at the tip</li>
+					<li><strong>Halocystidia</strong> &mdash; cystidia with a capitate apex surrounded by a large resinous droplet</li>
+					<li><strong>Acanthocystidia</strong> &mdash; cystidia that are described as antler-like, covered with apical protuberances</li>
+					<li><strong>Schizopapillate cystidia</strong> &mdash; cystidia with an apical constriction, kind of like that weird pokey end of a semi-deflated balloon</li>
+					<li><strong>Mucronate cystidia</strong> &mdash; similar to schizopapillate, but in reference to a more acute protuberance at the apex</li>
+				</ul>
+				<hr>
+				<p id="glossary-guttulate"><strong>Guttulate:</strong> Containing one or more oil droplets (guttules) in the cytoplasm.</p>
+				<hr>
+				<p id="glossary-heterobasidiomycete"><strong>Heterobasidiomycete:</strong> Basidiomycete whose basidia are septate (contrast with <a href="#glossary-homobasidiomycete">homobasidiomycete</a>). Heterobasidiomycetes were often excluded in the treatment of crusts because they were thought of as an evolutionarily and taxonomically distinct category. And they are, in a way, as fungi in the subphyla Pucciniomycotina and Ustilaginomycotina, as well as the classes Tremellomycetes and Dacrymycetes in Agaricomycotina, are all heterobasidiomycetes (basically all groups except for the class Agaricomycetes, which was considered synonymous with homobasidiomycetes). However, molecular phylogenetics revealed that some groups that are also heterobasidiomycetes belong in the Agaricomycetes, like Auriculariales, Sebacinales, and some families in Cantharellales, which means heterobasidiomycetes is a paraphyletic grouping. There are lots of good crust-like fungi in Auriculariales, Cantharellales, and Sebacinales, so I don't exclude heterobasidiomycetes from this website. Heterobasidia can be longitudinally (vertically) septate or transversly (horizontally) septate. If a basidium is longitidunally septate with four sterigmata, it is deemed cruciate (because the septa create the appearance of a plus sign when viewed from above).</p>
+				<hr>
+				<p id="glossary-homobasidiomycete"><strong>Homobasidiomycete:</strong> Basidiomycete whose basidia are not septate (contrast with <a href="#glossary-heterobasidiomycete">heterobasidiomycete)</a>. This grouping corresponds to most fungi in Agaricomycetes and, subsequently, most crusts.</p>
+				<hr>
+				<p id="glossary-hyaline"><strong>Hyaline:</strong> Transparent and colorless.</p>
+				<hr>
+				<p id="glossary-hymenophore"><strong>Hymenophore:</strong> The tissues that support the hymenium. Technically, this refers to the subiculum, trama, and subhymenium. The hymenophore is described by its configuration and consistency.</p>
+				<h3>Configuration</h3>
+				<ul>
+					<li><strong>Punctate</strong> &mdash; with small depressions</li>
+					<li><strong>Poroid</strong> &mdash; with more or less regular, defined pores</li>
+					<li><strong>Smooth</strong> or <strong>even</strong> &mdash; flat</li>
+					<li><strong>Phlebioid</strong> &mdash; with irregular but not anastomosed folds; phlebioid is also sometimes used as a descriptor of consistency in reference to the typical <em>Phlebia</em> texture, which is dense and hard, ceraceous when fresh and crustaceous when dry</li>
+					<li><strong>Merulioid</strong> &mdash; with irregular and anastomosed folds, sometimes poroid with irregular and fertile edges</li>
+					<li><strong>Reticulate</strong> &mdash; net-like folds and ridges</li>
+					<li><strong>Granulose</strong> &mdash; with minute granules</li>
+					<li><strong>Grandinoid</strong> &mdash; with small, rounded grains</li>
+					<li><strong>Papillate</strong> or <strong>colliculose</strong>  &mdash; with small, rounded projections</li>
+					<li><strong>Tuberculate</strong> &mdash; with more prominent, round, wart-like projections</li>
+					<li><strong>Odontioid</strong> &mdash; with cylindrical to conical projections</li>
+					<li><strong>Hydnoid</strong> &mdash; with prominent spine-like projections</li>
+					<li><strong>Irpicoid</strong> or <strong>dentate</strong> &mdash; with irregular, tooth-like projections</li>
+					<li><strong>Raduloid</strong> &mdash; with flat, wide, rounded projections</li>
+				</ul>
+				<h3 id="glossary-hymenophore-consistency">Consistency</h3>
+				<ul>
+					<li><strong>Pruinose</strong> &mdash; finely powdery or frosted, like the surface of grape</li>
+					<li><strong>Farinaceous</strong> &mdash; mealy, minutely granulose, more or less discontinous</li>
+					<li><strong>Chalky</strong> &mdash; with a chalky appearance or texture</li>
+					<li><strong>Arachnoid</strong> &mdash; discontinous fruiting body, very loosely interwoven hyphae like a spider web</li>
+					<li><strong>Fibrillose</strong> &mdash; loosely interwoven hyphae forming a net</li>
+					<li><strong>Byssoid</strong> &mdash; floccose, or cotton-like</li>
+					<li><strong>Hypochnoid</strong> &mdash; hyphae more or less compacted or felted</li>
+					<li><strong>Athelioid</strong> or <strong>pellicular</strong> &mdash; thin and easily detachable, like old, peeling skin</li>
+					<li><strong>Membranaceous</strong> &mdash; thin and attached, with a skin-like consistency</li>
+					<li><strong>Ceraceous</strong> &mdash; waxy</li>
+					<li><strong>Coriaceous</strong> &mdash; tough, like leather</li>
+					<li><strong>Crustaceous</strong> &mdash; hard, like a crustacean shell</li>
+					<li><strong>Scuprose</strong> &mdash; rough due to small, pointed bundles of hyphae</li>
+					<li><strong>Velvety</strong> &mdash; with short, dense and velvety hyphae</li>
+					<li><strong>Pilose</strong> &mdash; with long, soft, dense filaments</li>
+					<li><strong>Hispidus</strong> &mdash; with erect and rigid hairs</li>
+					<li><strong>Tomentosus</strong> &mdash; with dense, wooly hairs</li>
+				</ul>
+				<hr>
+				<p id="glossary-hypha"><strong>Hypha (plural: hyphae):</strong> The fundamental cellular unit of all filamentous fungi (and therefore all crusts). Hyphae are thread-like or tube-like cells that weave together to form the <strong>mycelium</strong> (the web-like "body" of a fungus that grows through the substrate feeding on organic matter) as well as the <a href="#glossary-basidioma">basidioma</a> (the macroscopic reproductive structure, or mushroom). When describing a basidioma, hyphae should be observed and measured in the different layers. I always measure subicular hyphae and subhemnial hyphae separately, with 10 width measurements per section, expressed as the mean &#x00B1; one standard deviation surrounded by the minimum and maximum values in parantheses. Crystal or resinous encrustations are also common on hyphae and can be diagnostic.</p>
+				<h3>Types</h3>
+				<ul>
+					<li><strong>Generative hyphae</strong> &mdash; the basic and universal type of hyphae of all crusts; generative hyphae are always septate, but otherwise vary between species and sometimes even within a single fruiting body in width, wall thickness (<strong>think-</strong> or <strong>thick-walled</strong>), type of <a href="#glossary-septum">septa</a> (<strong>simple</strong> or <strong>clamped</strong>), cytoplasmic content, branching, and color</li>
+					<li><strong>Binding hyphae</strong> &mdash; one of two types of "vegetative" hyphae that develop from generative hyphae; highly branched, tapered, of limited growth and with thick walls; rare in crusts</li>
+					<li><strong>Skeletal hyphae</strong> &mdash; one of two types of "vegetative" hyphae that develop from generative hyphae; long, straight, unbranched hyphae without septa; also rare in crusts, but sometimes present in the subiculum</li>
+				</ul>
+				<hr>
+				<p id="glossary-hyphal-system"><strong>Hyphal system:</strong> A reference to the number of distinct types of hyphae present in a fruiting body. <strong>Monomitic</strong> fungi only contain generative hyphae, which is by far the most common type of hyphal system in crusts. <strong>Dimitic</strong> fungi contain two of the three main types of hyphae (generative and binding or generative and skeletal). <strong>Trimitic</strong> contain all three. Sometimes the presence of modified tramal hyphae, like dichohyphae in <a href="/html/species/vararia-investiens.html"><em>Vararia investiens</em></a>, earns a species the dimitic designation.</p>
+				<hr>
+				<p id="glossary-hyphidium"><strong>Hyphidium (plural: hyphidia):</strong> Hyphidia are modified terminal hyphae in the hymenium (or, if in the trama, the suffix -hyphae instead of -hyphidia is applied).</p>
+				<ul>
+					<li><strong>Dichohyphidia</strong> &mdash; dichotomously branched hyphidia</li>
+					<li><strong>Dendrohyphidia</strong> &mdash; irregularly and strongly branched hyphidia, like tree branches</li>
+					<li><strong>Asterohyphidia</strong> &mdash; hyphidia with stellate branching</li>
+					<li><strong>Acanthohyphidia</strong> &mdash; hyphidia with a bottle-brush appearance</li>
+				</ul>
+				<hr>
+				<p id="glossary-margin"><strong>Margin:</strong> The edge of a basidioma. It can be <strong>sterile</strong> or <strong>fertile</strong>, <strong>abrupt</strong> (without a thin, sterile margin), <strong>distinct</strong>, <strong>smooth</strong>, <strong>arachnoid</strong> (loose like a spider web), <strong>byssoid</strong> (cottony), <strong>fimbriate</strong> (with radiating hyphae), or <strong>rhizomorphic</strong> (with hyphal strands).</p>
+				<hr>
+				<p id="mounting-medium"><strong>Mounting medium:</strong> A liquid placed on a glass slide into which a piece of fungal tissue is deposited and then covered with a cover slip to be observed under a compound microscope. Different mounting media, with or without additional stains, are useful for different aspects of microscopy and for observing different structures. Some mounting media also serve as chemical reagents in whose presence color changes may occur, which are very useful for identification. For a useful overview of chemical reagents and the preparation of other chemicals used in fungal microscopy, see <a href="https://www.britmycolsoc.org.uk/mycology/microscopy/reagents" target="_blank">this primer</a> by the British Mycological Society.</p>
+				<p><strong>Tap water</strong> is useful for seeing fungal structures "as is". Some encrustations, <a href="#glossary-cystidium">cystidia</a>, or <a href="#glossary-bladder">bladder structures</a> collapse or dissolve if placed in other media. However, crusts are generally hydrophobic so the tissue may be covered with bubbles and difficult to observe in tap water, especially because hyaline tissue is difficult to see without a stain. At the other end of the spectrum, some fungal tissue can be so densely encrusted that <strong>hydrochloric acid</strong> needs to be used to clear the crystals (I have not done this before and urge caution if you do).</p>
+				<p><strong>Potassium hydroxide (KOH)</strong> (or ammonium hydroxide) stained with <strong>phloxine </strong> (also called phloxine B) is the standard mounting medium. KOH is very good at dispersing the tissue, unlike tap water, because hyphae are typically hydrophobic. A drop of KOH is placed on the glass slide. Then, the dropper with phloxine is every so slightly tapped against it to release some stain. I first expel all phloxine from the dropper before tapping it so I'm just transferring a little bit of residual stain left on the tip of dropper. Phloxine is very powerful and can easily overwhelm the specimen. The tissue should be bright red from absorbing the stain while the background stays pink. If the entire field of view is bright red, too much phloxine was used. In this case, and in general, you can add a drop of KOH to one end of the coverslip and suck out the stain with the edge of a paper towel from the other to "wash" out the stain, but spores will be carried away so I generally avoid this technique. Phloxine will stain anything it touches &mdash; your skin, clothes, table, whatever &mdash; so be careful. Of course, KOH can be used without adding phloxine. Finally, KOH can be placed directly on the fruiting body to observe color changes. KOH has a shelf life of about a year, until precipitates form; the shelf life of phloxine is not specified and is therefore supposedely indefinite.</p>
+				<ul>
+					<li><strong>Xanthochroic</strong> &mdash; darkening on alkalization (especially common in the Hymenochaetales); this term is confusing because it is also refers to people with "light hair and pale complexions"</li>
+				</ul>
+				<p><em>3-5% KOH (3-5 g KOH in 97-95 mL distilled water, or diluted from stock solution), phloxine (1.5 g phloxine in 98.5 mL distilled water)</em></p>
+				<p><strong>Lactophenol cotton blue</strong> is a general stain and is also used to observe whether structures are <strong>acyanophilous</strong> or <strong>cyanophilous</strong>. Cyanophily may be difficult to observe because the cytoplasm also absorbs the stain. The tissue needs to sit in cotton blue for half an hour so that the lactic acid can properly swell the cytoplasm. The slide can be warmed with a spirit lamp, if available, to speed up the process. Some mycologists make all their microscopic measurements in this medium. Cotton blue keeps for several years.</p>
+				<ul>
+					<li><strong>Acyanophilous</strong> &mdash; no distinct darkening of cell walls in cotton blue</li>
+					<li><strong>Cyanophilous</strong> &mdash; the walls of basidiospores, cystidia, basidia, or hyphae turn dark(er) blue in the presence of cotton blue</li>
+				</ul>
+				<p><em>5 mL of 1% cotton blue (1 g cotton blue in 99 mL distilled water), 10 g lactic acid, 10 g phenol, 15 mL glycerine, 5 mL water</em></p>
+				<p><strong>Melzer's reagent</strong> is very important for the identification of crust fungi but is difficult to acquire. That's because chloral hydrate is a schedule IV controlled substance. The reaction of fungal tissue in Melzer's reagent is often one of the first questions asked in keys. I hope the <a href="/fsc_identikit/vis.html">synoptic key</a> will allow for species identification without relying on Melzer's. However, basidiospore ornamentation is sometimes not visible without Melzer's and identification is certainly facilitated by its use. This reagent apparenty doesnt' go bad - mycologists use decades-old solutions.</p>
+				<ul>
+					<li><strong>Inamyloid</strong> &mdash; no color change in the presence of Melzer's reagent</li>
+					<li><strong>Amyloid</strong> &mdash; a bluish or greyish reaction in Melzer's reagent</li>
+					<li><strong>Dextrinoid</strong> &mdash; a reddish brown reaction in Melzer's reagent</li>
+				</ul>
+				<p><em>20 mL distilled water, 1.5 g potassium iodide, 0.5 g iodine, 20 g chloral hdyrate</em></p>
+				<p><strong>Sulphovanilline</strong> is used to color the contents of gloeocystidia. If positive, it gives a black color. I have never used this reagent because it seems like a pain given its short shelf life (days) and the dangers of using strong acid. The stained tissue itself only lasts for about 10 minutes due to the destruction of the acid.</p>
+				<p><em>5 mg pure vanillin, 6 mL 80% sulphuric acid</em></p>
+				<hr>
+				<p id="glossary-resupinate"><strong>Resupinate:</strong> A fungus that is growing attached or adnate to a substrate, typically on the underside of a substrate.</p>
+				<hr>
+				<p id="glossary-septum"><strong>Septum (plural: septa):</strong> The cross wall that divides and defines individual <a href="#glossary-hypha">hyphae</a> and other fungal cells. <strong>Simple septa</strong> are normal cross walls of the same thickness as the hyphal cell wall. <strong>Clamped septa</strong> are ones that are bridged by a little loop or buckle. Clamps can be universal (occurring at all septa), scattered (present at only some septa, either throughout the fruiting body or maybe only on the subicular or subhymenial hyphae), or absent. They can occur singularly, as a pair (double), or multiple whorled around the septum (<strong>verticillate</strong>). Basal clamps are clamps at the base of basidia. Whether a fungus has simple septa or clamped septa is very important for identification. Septa can also sometimes be found in cystidia and basidia (see <a href="#glossary-heterobasidiomycete">heterobasidiomycetes</a> vs. <a href="#glossary-homobasidiomycete">homobasidiomycetes</a>).</p>
+				<hr>
+				<p id="glossary-sterigma"><strong>Sterigma (plural: sterigmata):</strong> The prong-like tips of <a href="#glossary-basidium">basidia</a> upon which basidiospores are produced like inflating balloons.</p>
+				<hr>
+				<p id="glossary-sterile-structure"><strong>Sterile structure:</strong> Non-reproductive structures in the hymenium such as <a href="#glossary-cystidium">cystidia</a>, <a href="#glossary-hyphidium">hyphidia</a>, and <a href="#glossary-bladder">bladder structures</a>.</p>
+				<hr>
+				<p id="glossary-teleomorph"><strong>Teleomorph:</strong> Sexual fruiting body of a fungus (contrast with <a href="#glossary-anamorph">anamorph</a>, the asexual fruiting body)</p>
+				<hr>
+				<p id="glossary-wood-rot"><strong>Wood rot:</strong> Wood is composed of the polymers cellulose, hemicellulose, and lignin. Crusts that eat wood can be divided into two categories: white rot fungi and brown rot fungi. <strong>White rot</strong> fungi degrade cellulose, hemicellulose, and lignin, resulting in bleached, stringy wood. <strong>Brown rot</strong> fungi ignore the lignin, focusing instead on the cellulose and hemicellulose. The resulting decayed wood is brown and often cubical and crumbly.</p>
+				<hr>
+			</section>
+			<section>
+				<div class="references">
+					<h2>References</h2>
+					<p>Bernicchia, A. &amp; S.P. Gorjón. (2010). <em>Fungi Europaei, Volume 12: Corticiaceae s.l.</em> Massimo Candusso, Italia.</p>
+					<p>Hjortstam, K., Larsson, K.-H. , &amp; Ryvarden, L. (1988). <em>The Corticiaceae of North Europe, Volume 1</em>. Fungiflora, Oslo, Norway.</p>
+					<p>Jülich, W. &amp; Stalpers, J. A. (1980). <em>The Resupinate Non-poroid Aphyllophorales of the Temperate Northern Hemisphere.</em> North-Holland Publishing Company, Amsterdam, Oxford, New York.</p>
+					<p>Kuo, M. &amp; Methven, A.S. (2014). <em>Mushrooms of the Midwest.</em> University of Illinois Press.</p>
+					<p>Rossman, A. Y., Cavan Allen, W., &amp; Castlebury, L. A. (2016). New combinations of plant-associated fungi resulting from the change to one name for fungi. <em>IMA Fungus</em>, <em>7</em>(1), 1–7.</p>
+				</div>
+			</section>
+		</div>
+	</div>
 </body>
 </html>

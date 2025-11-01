@@ -1,95 +1,146 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135441904-1"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-135441904-1');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CrustFungi.Com</title>
-<meta name="description" content="CrustFungi.Com showcases the diversity of crust fungi in North America. It includes an introduction to collecting crusts, species descriptions, phylogenetic information, and more.">
-<link rel="stylesheet" href="/css/style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
-<script src="/js/handlebarsNavBar.js"></script>
-<!--faviconit.com favicon generator-->
-<link rel="shortcut icon" href="/images/favicon/favicon.ico">
-<link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon/favicon.ico">
-<link rel="icon" type="image/png" sizes="196x196" href="/images/favicon/favicon-192.png">
-<link rel="icon" type="image/png" sizes="160x160" href="/images/favicon/favicon-160.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon-64.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16.png">
-<link rel="apple-touch-icon" href="/images/favicon/favicon-57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/favicon-114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/favicon-72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/favicon-144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/favicon-60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/favicon-120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/favicon-76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/favicon-152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon-180.png">
-<meta name="msapplication-TileColor" content="#FFFFFF">
-<meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
-<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+	<!-- Google Analytics - global site tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135441904-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-135441904-1');
+	</script>
+	<!---->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CrustFungi.Com</title>
+	<meta name="description" content="Home page of CrustFungi.Com – a site dedicated to showcasing the diversity of crust fungi in North America and includes background information, species descriptions, and a synoptic key for identification.">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+	<script src="/js/handlebarsNavBar.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/js/jquery-visible-master/jquery.visible.js"></script>
+	<script src="/js/jquery-visible-master/jquery.visible.min.js"></script>
+	<script src="/js/stickyIndex.js"></script>
+	<!-- faviconit.com favicon generator -->
+	<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/images/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/images/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="/images/favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+	<!---->
 </head>
-	
 <body>
-<div class="nav" id="responsive-nav">
-	<div id="logo">
-		<script id="logo-template" type="text/x-handlebars-template">
-			<p>CRUST</p>
-			<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
-			<p>FUNGI</p>
-		</script>
-	</div>
-	<div id="links">
-		<script id="links-template" type="text/x-handlebars-template">
-			{{{links}}}
-		</script>
-		<script src="/js/activateNavIcon.js"></script>
-		<script src="/js/animateNavIcon.js"></script>
-	</div>
-	<div id="copyright">
-		<script id="copyright-template" type="text/x-handlebars-template">
-			<p>&copy; {{copyright}} ALDEN DIRKS</p>
-		</script>
-	</div>
-</div>
-
-<div class="content introduction">
-	<div class="splash">
-		<div class="row">
-			<div class="column">
-				<img src="/images/index/mycena-leaiana.jpg" alt="Mycena leiana">
-				<img src="/images/index/phlebia-incarnata.jpg" alt="Phlebia incarnata">
-				<img src="/images/index/phlebiobsis-gigantea.jpg" alt="Phlebiopsis gigantea">
-				<img src="/images/index/trichaptum-biforme.jpg" alt="Trichaptum biforme">
+	<div class="body-flex-container">
+		<div class="nav" id="responsive-nav">
+			<div id="logo">
+				<script id="logo-template" type="text/x-handlebars-template">
+					<p>CRUST</p>
+					<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
+					<p>FUNGI</p>
+				</script>
 			</div>
-			<div class="column">
-				<img src="/images/index/scutellinia-scutellata.jpg" alt="Scutellinia scutellata">
-				<img src="/images/index/mycena-corticola.jpg" alt="Mycena corticola">
-				<img src="/images/index/lachnellula-resinaria.jpg" alt="Lachnellula resinaria">
-				<img src="/images/index/russula-compacta.jpg" alt="Russula compacta">
-			</div> 
-			<div class="column">
-				<img src="/images/index/gymnosporangium-juniperivirginianeae.jpg" alt="Gymnosporangium juniperivirginianae">
-				<img src="/images/index/hymenochaete-rubiginosa.jpg" alt="Hymenochaete rubiginosa">
-				<img src="/images/index/aleurodiscus-oakesii.jpg" alt="Aleurodiscus oakesii">
-				<img src="/images/index/urnula-craterium.jpg" alt="Urnula craterium">
+			<div id="links">
+				<script id="links-template" type="text/x-handlebars-template">
+					{{{links}}}
+				</script>
+				<script src="/js/activateNavIcon.js"></script>
+				<script src="/js/animateNavIcon.js"></script>
 			</div>
-			<div class="column">
-				<img src="/images/index/lentinus-arcularius.jpg" alt="Lentinus arcularius">
-				<img src="/images/index/smooth-patch-disease.jpg" alt="Smooth patch disease caused by Aleurodiscus oakesii">
-				<img src="/images/index/xylobolus-frustulatus.jpg" alt="Xylobolus frustulatus">
+			<div id="copyright">
+				<script id="copyright-template" type="text/x-handlebars-template">
+					<p>&copy; {{copyright}} ALDEN DIRKS</p>
+				</script>
+			</div>
+		</div>
+		<div class="content index">
+			<div class="index-banner-flex-container">
+				<div class="index-banner-column">
+					<img src="/images/index/phlebiopsisGigantea.jpg" alt="Phlebiopsis gigantea" style="width: 100%">
+				</div>
+				<div class="index-banner-column">
+					<img src="/images/index/stereumOstrea.jpg" alt="Stereum ostrea" style="width: 100%">
+				</div>
+				<div class="index-banner-column">
+					<img src="/images/index/galziniaIncrustans.jpg" alt="Galzinia incrustans" style="width: 100%">
+				</div>
+				<div class="index-banner-column">
+					<img src="/images/index/hymenochaetopsisOlivacea.jpg" alt="Hymenochaetopsis olivacea" style="width: 100%">
+				</div>
+			</div>
+			<header>
+				<h1>Welcome to CrustFungi.Com!</h1>
+			</header>
+			<div class="index-content-flex-container">
+				<div class="index-content-text">
+					<p>My name is Alden Dirks and I am the creator of CrustFungi.Com. Check out my personal website <a href="https://www.aldendirks.com/" target="_blank">here</a> to learn more about what I have going on as a mycologist. As is true for all mycology, this site is a work in progress and will never be "complete". However, CrustFungi.Com in particular is still early in its development (19 species profiles and counting). As the owner of this much coveted domain name, though, I recognize my responsibility to make something respectable out of it so that crust fungi finally receive the acclaim that they deserve.</p>
+					<p>Little attention is paid to crust fungi despite their enormous ecological importance as decayers and symbionts. Learn more about this diverse group fungi in the <a href="html/sidebar/introduction.html">Introduction</a>. If you have a crust of your own to identify, try your hand at the <a href="/fsc_identikit/vis.html">Synoptic Key</a>. The species of crust fungi treated on this website can be browsed under <a href="html/sidebar/species.html">Species</a>. When you come across terms that are new to you, make sure to check out the <a href="/html/sidebar/glossary.html">Glossary</a>. Finally, it can be hard to access scientific literature outside of academia so I've done my best to include articles that I cite in <a href="html/sidebar/literature.html">Literature</a>.</p>
+					<p>If you have any questions or comments, please contact me <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8IzF6GLuJ-kBBO9C3biyKt7Pp_WI-g7PvP4l7fzQnRVJQ7g/viewform?usp=sf_link" target="_blank">here</a>. I especially welcome any constructive feedback, notices of any errors or broken pages, and suggestions on new species or terms you'd like to see on the website.</p>
+					<p>Finally, if you find CrustFungi.Com useful, I'd greatly welcome and appreciate any donations to help offset costs associated with serving the website. Thanks!</p>
+					<br>
+					<div id="donate">
+						<form action="https://www.paypal.com/donate" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_donations" />
+							<input type="hidden" name="business" value="SY232HPN5J9R8" />
+							<input type="hidden" name="currency_code" value="USD" />
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+						</form>
+					</div>
+					<br>
+				</div>
+				<div class="index-content-new-entry">
+					<img src="/images/species_descriptions/xenasmatella-sp-sublividus/xenasmatella-sp-sublividius_sidebar-12_small.jpg" alt="New content on crustfungi.com: Xenasmatella sp. 'sublividus'">
+					<p><strong>NEW:</strong> <a href="/html/species/xenasmatella-sp-sublividus.html"><em>Xenasmatella</em> sp. <em>'sublividus'</em></a> (October 17, 2022).</p>
+					<br>
+					<img src="/images/species_descriptions/vararia-investiens/vararia-investiens_sidebar-01_small.jpg" alt="Updated content on crustfungi.com: Vararia investiens">
+					<p><strong>UPDATED:</strong> <a href="/html/species/byssocorticium-atrovirens.html"><em>Vararia investiens</em></a> (August 11, 2022).</p>
+					<br>
+					<p><strong>NEW:</strong> <a href="/html/keys/byssocorticium.html">Key to <em>Byssocorticium</em></a> (July 18, 2022).</p>
+					<br>
+					<img src="/images/species_descriptions/byssocorticium-pulchrum/byssocorticium-pulchrum_sidebar-06_index.jpg" alt="New content on crustfungi.com: Byssocorticium pulchrum">
+					<p><strong>NEW:</strong> <a href="/html/species/byssocorticium-pulchrum.html"><em>Byssocorticium pulchrum</em></a> (July 17, 2022).</p>
+					<br>
+					<img src="/images/species_descriptions/byssocorticium-atrovirens/byssocorticium-atrovirens_sidebar-01_small.jpg" alt="Updated content on crustfungi.com: Byssocorticium atrovirens">
+					<p><strong>UPDATED:</strong> <a href="/html/species/byssocorticium-atrovirens.html"><em>Byssocorticium atrovirens</em></a> (July 17, 2022).</p>
+					<br>
+					<img src="/images/species_descriptions/xenasma-praeteritum/xenasma-praeteritum_sidebar-01_small.jpg" alt="Updated content on crustfungi.com: Xenasma praeteritum">
+					<p><strong>UPDATED:</strong> <a href="/html/species/xenasma-praeteritum.html"><em>Xenasma praeteritum</em></a> (December 24, 2021).</p>
+					<br>
+					<img src="/images/species_descriptions/tubulicrinis-accedens/tubulicrinis-accedens_sidebar-01_small.jpg" alt="New content on crustfungi.com: Tubulicrinis accedens">
+					<p><strong>UPDATED:</strong> <a href="/html/species/tubulicrinis-accedens.html"><em>Tubulicrinis accedens</em></a> (December 10, 2021).</p>
+					<br>
+					<img src="/images/species_descriptions/ceriporia-spissa/ceriporia-spissa_sidebar-03_small.jpg" alt="Updated content on crustfungi.com: Ceriporia spissa">
+					<p><strong>UPDATED:</strong> <a href="/html/species/ceriporia-spissa.html"><em>Ceriporia spissa</em></a> (August 25, 2021).</p>
+					<br>
+					<img src="/images/species_descriptions/vararia-investiens/vararia-investiens_sidebar-01_small.jpg" alt="Updated content on crustfungi.com: Vararia investiens">
+					<p><strong>UPDATED:</strong> <a href="/html/species/vararia-investiens.html"><em>Vararia investiens</em></a> (August 25, 2021).</p>
+					<br>
+					<img src="/images/species_descriptions/protomerulius-minor/protomerulius-minor_sidebar-03_small.jpg" alt="Updated content on crustfungi.com: Protomerulius minor">
+					<p><strong>UPDATED:</strong> <a href="/html/species/protomerulius-minor.html"><em>Protomerulius minor</em></a> (August 25, 2021).</p>
+					<br>
+					<img src="/images/species_descriptions/trechispora-stellulata/trechispora-stellulata_sidebar-02_small.jpg" alt="New content on crustfungi.com: Xenasma praeteritum">
+					<p><strong>NEW:</strong> <a href="/html/species/trechispora-stellulata.html"><em>Trechispora stellulata</em></a> (June 7, 2021).</p>
+					<br>
+					<img src="/images/species_descriptions/tomentella-ferruginea/tomentella-ferruginea_sidebar-12_small.jpg" alt="New content on crustfungi.com: Tomentella ferruginea">
+					<p><strong>NEW:</strong> <a href="/html/species/tomentella-ferruginea.html"><em>Tomentella ferruginea</em></a> (March 9, 2021).</p>
+					<br>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </body>
 </html>

@@ -1,0 +1,24 @@
+{
+  "name": "crustfungi.com",
+  "version": "1.0.0",
+  "description": "CrustFungi.Com Node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldendirks/crustfungi.git"
+  },
+  "author": "Alden Dirks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aldendirks/crustfungi/issues"
+  },
+  "homepage": "https://github.com/aldendirks/crustfungi#readme",
+  "dependencies": {
+    "assemble": "^0.24.3",
+    "handlebars-helper-sitemap": "^1.0.0",
+    "left-pad": "^1.3.0"
+  }
+}

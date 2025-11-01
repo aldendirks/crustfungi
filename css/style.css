@@ -1,5 +1,38 @@
-/* CrustFungi.Com CSS Code */
-/* Written by: Alden Dirks */
+/* CSS Code | CrustFungi.Com */
+
+
+/*-------------------------*/
+/* Themes */
+
+/* original */
+/*:root {
+	--nav_background: #ededed;  
+	--nav_text: #2E2E2E;  
+	--nav_text_hover: white; 
+	--nav_text_hover_background: teal;
+	--nav_border: #ccc;
+	--content_h1: darkslategray;
+	--content_h2: teal;
+	--content_h3: teal;
+	--content_a: #bc1b3e;
+	--content_a_hover: #f86787;
+}*/
+
+/* watermelon */
+:root {
+	--body_background: #bbbbbb;
+	--nav_background: #f4efe9;
+	--nav_text: #414141;
+	--nav_text_hover: white;
+	--nav_text_hover_background: #056571;
+	--nav_border: #ccdfcb;
+	--content_background: white;
+	--content_h1: darkslategray;
+	--content_h2: #056571;
+	--content_h3: #ff615c;
+	--content_a: #ff615c;
+	--content_a_hover: #ccdfcb;
+}
 
 
 /*-------------------------*/
@@ -51,8 +84,7 @@ body {
 	.nav a {
 		float: left; /* Adding float: left; to a display: block; element makes it act more like an inline element */
 		display: block; /* With float: left; specified, this display rule seems redundant */
-		text-align: center; /* This seems to be redundant */
-		padding: 15px;
+		padding: 11px;
 	}
 	.nav a:not(:first-child) {
 		display: none;
@@ -77,12 +109,18 @@ body {
 		right: 0;
 		top: 0;
 	}
-	.species-image {
-		display: none;
+	.index-content-new-entry {
+		margin: 10px 0px;
 	}
-	tr td:last-child, tr th:last-child {
-            display: none;
-        }
+	.introduction-flex-container {
+		flex-wrap: wrap;
+	}
+	.introduction-flex-content {
+		margin-bottom: 10px;
+	}
+	.species-flex-child img {
+		width: 100%;
+	}
 	.species-description-content {
 		display: flex;
 		flex-direction: column;
@@ -90,89 +128,59 @@ body {
 	}
 	.species-description-images {
 		margin: 20px 0px;
+	}
+	.literature table {
+		display: block;
+		max-width: -moz-fit-content;
+		max-width: fit-content;
+		margin: 0 auto;
+		overflow-x: auto;
+		white-space: nowrap;
 	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
 	.nav {
-		overflow: hidden;
 		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
+		display: flex;
+		align-items: center;
 	}
-	.nav #logo, .nav #copyright {
+	.nav #copyright,#logo p {
 		display: none;
 	}
+	.nav #logo img {
+		width: 60px;
+		opacity: .9;
+		height: auto;
+		filter: var(--logo_filter);
+		padding: 0px 5px;
+	}
 	.nav a {
-		float: left; /* Adding float: left; to a display: block; element makes it act more like an inline element */
-		display: block; /* With float: left; specified, this display rule seems redundant */
-		text-align: center; /* This seems to be redundant */
-		padding: 15px;
+		float: left;
+		display: block;
+		padding: 11px;
 	}
 	.nav .nav-icon {
 		display: none;
 	}
-	.species-image {
-		display: none;
-	}
-	.species-description-content {
+	.index-content-flex-container {
 		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+		flex-direction: row;
 	}
-	.species-description-images {
-		margin: 20px 0px;
+	.index-content-new-entry {
+		margin: 10px 0px 0px 30px;
 	}
-} 
-
-/* Medium devices (landscape tablets, 900px and up) */
-@media only screen and (min-width: 800px) {
-	.nav {
-		width: 200px;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		position: fixed;
-		top: 0;
-		left: 0;
-		overflow: auto;
-		margin: 0;
+	.introduction-flex-container {
+		flex-wrap: nowrap;
 	}
-	.nav #logo, .nav #links, .nav #copyright {
-		display: block;
+	.introduction-flex-content {
+		margin: 0px 10px;
 	}
-	.nav a {
-		float: none;
-		text-align: left;
-		padding: 10px 40px;
-		line-height: 1;
-	}
-	.content {
-		margin-left: 200px;
-	}
-	.species-image {
-		display: none;
-	}
-	.species-description-content {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.species-description-images {
-		margin: 20px 0px;
-	}
-}  
-
-/* Large devices (laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1100px) {
-	.species-image {
-		display: block;
-		position: -webkit-sticky;
-		position: sticky;
-		top: 20px;
-		align-self: flex-start; /* <-- this is required to make an element in a flexbock sticky */
-		box-sizing: border-box;
+	.species-flex-child img {
+		width: 300px;
 	}
 	.species-description-content {
 		display: flex;
@@ -186,79 +194,119 @@ body {
 		margin: 20px 0px 0px 30px;
 		flex-basis: 50%;
 	}
+} 
+
+/* Medium devices (landscape tablets, 900px and up) */
+@media only screen and (min-width: 900px) {
+	.body-flex-container {
+		display: flex;
+	}
+	.nav {
+		flex: 0 0 200px;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		overflow: auto;
+		align-items: stretch;
+	}
+	.nav #logo, .nav #links, .nav #copyright {
+		display: block;
+	}
+	.nav #logo {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.nav #logo img {
+		width: 180px;
+		opacity: .8;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: -2px;
+		padding-bottom: 10px;
+		filter: var(--logo_filter);
+	}
+	.nav #logo p {
+		display: block;
+		font-size: 50px;
+		text-align: center;
+		color: var(--nav_text);
+		margin: 0;
+		padding: 5px;
+		line-height: .5;
+	}
+	.nav a {
+		float: none;
+		text-align: left;
+		padding: 10px 0px 10px 42px;
+		line-height: 1;
+	}
+}  
+
+/* Large devices (laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	body {
+		background-color: var(--body_background);
+	}
+	.body-flex-container {
+		display: flex;
+		margin: 0 auto;
+		width: 1200px;
+		background-color: var(--content_background);
+	}
+	.content {
+		width: 1000px;
+	}
 }
 
 
 /*-------------------------*/
-/* Navigation Menu */
+/* Sidebar */
 
 .nav {
-	background-color: rgb(237, 237, 237);
+	background-color: var(--nav_background);
 	font-family: Peich, Arial, sans-serif;
-	z-index: 1;
-}
-
-.nav #logo {
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-.nav #logo img {
-	width: 175px;
-	opacity: .85;
-	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.nav #logo p {
-	font-size: 50px;
-	text-align: center;
-	color: #2E2E2E;
-	margin: 0;
-	padding-top: 10px;
-	line-height: .5;
+	z-index: 2;
 }
 
 .nav a {
-	color: #2E2E2E;
+	color: var(--nav_text);
 	text-decoration: none;
 	font-size: 28px;
 }
 
 .nav a:hover {
-	background-color: teal;
-	color: white;
+	color: var(--nav_text_hover);
+	background-color: var(--nav_text_hover_background);
 	}
 
 .nav .nav-icon {
-	padding: 0px; /* This ensures that the menu icon ccontainer doesn't have any clickable space that doesn't animate the icon */
-	margin-top: 14px;
-	margin-right: 20px;
+	padding: 0px; /* This ensures that the menu icon container doesn't have any clickable space that doesn't animate the icon */
+	margin-right: 4px;
 }
 
 .menu {
 	display: inline-block;
 	cursor: pointer;
-	margin: -10px 0px; /* This is to prevent the menu from having extra space due to the 6px margins of the nav icon bars (see below), which is clickable but doesnt animate */
+	margin-bottom: -7px; /* This is to prevent the menu from having extra space due to the 6px margins of the nav icon bars (see below), which is clickable but doesnt animate */
 	padding: 6px; /* More padding leads to more clickable space */
 }
 
 .menu:hover {
-	background-color: rgb(237, 237, 237);
+	background-color: var(--nav_background);
 }
 
 .bar1, .bar2, .bar3 {
 	width: 35px;
 	height: 5px;
-	background-color: #2E2E2E;
+	background-color: var(--nav_text);
 	margin: 6px 0;
 	transition: 0.4s;
 }
 
 .menu:hover .bar1, .menu:hover .bar2, .menu:hover .bar3 {
-	background-color: teal;
+	background-color: var(--nav_text_hover_background);
 }
 
 .change .bar1 {
@@ -282,8 +330,8 @@ body {
 
 .nav #copyright p {
 	font-size: 18px;
-	color: #2E2E2E;
-	border-top: 2px solid #ccc;
+	color: var(--nav_text);
+	border-top: 4px solid var(--nav_border);
 	vertical-align: bottom;
 	text-align: center;
 	padding-top: 10px;
@@ -302,189 +350,286 @@ body {
 }
 
 .content h1 {
-	color: #024C4C;
-	border-bottom: 2px solid rgba(2,76,76,.70);
+	color: var(--content_h1);
+	border-bottom: 4px solid var(--nav_border);
 	padding-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .content h2 {
 	font-size: 20px;
-	padding-top: 20px;
-	color: teal;
+	color: var(--content_h2);
+}
+
+.content h3 {
+	margin-top: 25px;
+	font-size: 15px;
+	color: var(--content_h3);
 }
 
 .content p {
 	font-size: 15px;
 	line-height: 25px;
+	color: var(--nav_text);
+}
+
+.content blockquote {
+	font-size: 15px;
+	line-height: 25px;
+	color: var(--nav_text);
+	border-left: 3px solid var(--content_h3);
+	padding-left: 10px;
 }
 
 .content a {
-	color: darkmagenta;
+	color: var(--content_a);
 }
 
 .content a:hover {
-	color: crimson;
+	color: var(--content_a_hover);
 }
 
 .content strong {
-	color: teal;
+	color: var(--content_h2);
+}
+
+.content ul {
+	margin-top: -10px;
+	font-size: 15px;
+	line-height: 25px;
+	color: var(--nav_text);
+}
+
+.content hr {
+	border: 1px solid var(--nav_border);
+}
+
+.content ol {
+	font-size: 15px;
+	line-height: 25px;
+	color: var(--nav_text);
 }
 
 
 /*-------------------------*/
-/*Home Page*/
+/* Index */
 
-.splash {
-	box-sizing: border-box;
-	position: fixed;
-	overflow-y: hidden;
-	margin-top: -6px;
-	margin-left: -25px;
-	height: 100%;
+.index-banner-flex-container {
+	display: flex;
+	margin: 0 -22.5px;
 }
 
-.splash img {
+.index-banner-column {
+	flex: 25%;
+	padding: 5px 2.5px;
+}
+
+.index-content-text {
+	flex: 1;
+	text-align: justify;
+}
+
+.index-content-new-entry {
+	align-self: flex-start;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+.index header {
+	background: white;
+	z-index: 1;
+}
+
+.index-content-new-entry img {
 	width: 100%;
+	border-radius: 10px;
+	border: 5px solid var(--nav_border);
 }
 
-.row {
-	display: -ms-flexbox; /* IE10 */
-	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
-	flex-wrap: wrap;
-	padding: 0 4px;
+.index-content-new-entry p {
+	margin: -3px 0;
 }
 
-.column {
-	-ms-flex: 20%; /* IE10 */
-	flex: 20%;
-	max-width: 25%;
-	padding: 0 4px;
-}
-
-.column img {
-	margin-top: 8px;
-	vertical-align: middle;
-}
-
-@media screen and (max-width: 1200px) {
-	.column {
-		-ms-flex: 30%;
-		flex: 30%;
-		max-width: 100%;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.column {
-		-ms-flex: 40%;
-		flex: 40%;
-		max-width: 100%;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.column {
-		-ms-flex: 100%;
-		flex: 100%;
-		max-width: 100%;
-	}
+#donate {
+	text-align: center;
+	margin-top: -5px;
 }
 
 
 /*-------------------------*/
-/*Species Page*/
+/* Introduction */
 
-.species-flex {
+.introduction-flex-container {
 	display: flex;
 	flex-direction: row;
+	margin: 20px -10px 20px -10px;
 }
 
-.species-text {
-	flex-basis: 60%;
-}
-
-p.synonymy {
-	padding-left: 10px;
-	font-size: 13px;
-	color: darkslategray;
-}
-
-.binomial-flex {
+.introduction-flex-content {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	background-color: var(--nav_border);
+	border-radius: 5px;
+	padding: 10px;
 }
 
-.binomial-genus p {
-	min-width: 150px;
-}
-
-.binomial-genus p {
-	margin: 0px;
-	color: teal;
-}
-
-.binomial-epithet {
-	margin-bottom: 20px;
-}
-
-.binomial-epithet p {
-	margin: 0px;
-}
-
-.species-image img {
+.introduction-flex-content img {
 	width: 100%;
 	height: auto;
-	border: 2px solid rgba(2,76,76,.70);
+	border-radius: 5px;
 }
 
-.species-image p {
-	margin-top: -7px;
-	font-size: 15px;
-	font-style: italic;
+.introduction-flex-content p {
+	margin: auto;
+	padding: 5px;
+}
+
+.introduction-fig-description {
+	margin: -10px 0 20px 0px;
+}
+
+.introduction-fig-description p {
+	font-size: 14px;
 }
 
 
 /*-------------------------*/
-/*Literature Page*/
+/* Key */
 
-table {
+.key-container {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*-------------------------*/
+/* Species */
+
+.species-filters {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.species-filters-buttons button {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: var(--content_a);
+	color: var(--nav_text_hover);
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 4px;
+}
+
+.species-filters-buttons button:hover {
+	background-color: var(--content_a_hover);
+}
+
+.species-filters-buttons .active {
+	background-color: var(--content_a_hover);
+}
+
+.species-flex-parent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+.species-flex-child {
+	display: flex;
+	flex-direction: column;
+	margin: 12px;
+	text-align: center;
+}
+
+.species-flex-child p {
+	margin: 0;
+	align-content: center;
+}
+
+.species-flex-child a img:hover{
+	opacity: .75;
+}
+
+#species-list-view {
+	display: none;
+}
+
+.species-family {
+	margin-left: 15px;
+}
+
+.species-species {
+	margin-left: 30px;
+}
+
+
+/*-------------------------*/
+/* Literature */
+
+.literature table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
-	border: 1px solid #ddd;
+	border: 2px solid var(--nav_border);
 	counter-reset: rowNumber; /*part of code to automatically number row*/
-	margin-bottom: 10px;
+	margin-bottom: 12px;
+	margin-top: 12px;
 }
 
-th {
-	color: whitesmoke;
-	background-color: teal;
+.literature th {
+	color: var(--content_h2);
+	background-color: var(--nav_border);
 	font-size: 20px;
 }
 
-th, td {
+.literature th, .literature td {
 	text-align: left;
-	padding: 16px;
+	padding: 10px 20px;
 }
 
-tr:nth-child(even) {
-	background-color: #f2f2f2;
+.literature td {
+	line-height: 25px;
 }
 
-tr:not(:first-child) {
-	counter-increment: rowNumber;
-} /*part of code to automatically number row*/
+.literature td img {
+	height: 25px;
+}
 
-tr td:first-child::before {
-	content: counter(rowNumber);
+.literature td img:hover {
+	opacity: .5;
+}
+
+.literature tr:nth-child(even) {
+	background-color: var(--nav_background);
+}
+
+.literature tr:not(:first-child) {
+	counter-increment: rowNumber; /*part of code to automatically number row*/
+} 
+
+.literature tr td:first-child::before {
+	content: counter(rowNumber); /*part of code to automatically number row*/
 	min-width: 1em;
 	margin-right: 0.5em;
-} /*part of code to automatically number row*/
+	font-size: 15px;
+	color: var(--content_h2);
+	font-weight: bold;
+} 
 
 
 /*-------------------------*/
-/* Species Description */
+/* Species Profiles */
 
 .banner {
 	margin-left: -25px;
@@ -494,20 +639,26 @@ tr td:first-child::before {
 .banner img {
 	width: 100%;
 	height: auto;
-	opacity: .8;
+	opacity: .75;
 	filter: alpha(opacity = 0.75); /* For IE8 and earlier */
 }
 
 .species-description header {
-	border-bottom: 1px solid teal;
+	border-bottom: 4px solid var(--nav_border);
 }
 
 .species-description h1 {
 	border-bottom: 0px;
 }
 
+.species-description #common-name{
+	margin-top: 0;
+	font-size: 24px;
+	color: var(--content_a);
+}
+
 .species-name {
-	color: #004C59;
+	color: var(--content_h1);
 }
 
 .taxonomy {
@@ -519,12 +670,20 @@ tr td:first-child::before {
 	padding-left: 10px;
 }	
 
+.taxonomy p {
+	color: var(--content_h2);
+}
+
 .species-description-text {	
 	text-align: justify;
 	position: -webkit-sticky;
 	position: sticky;
 	align-self: flex-end;
 	bottom: 0;
+}
+
+.species-description-text h2 {	
+	margin-top: 25px;
 }
 
 .species-description-images img { 
@@ -543,3 +702,50 @@ tr td:first-child::before {
 	margin-top: 25px;
 	font-family: Roboto-Thin-Italic;
 }
+
+.species-description-footer p {
+	color: var(--content_h2);
+	font-weight: bold;
+}
+
+
+/*-------------------------*/
+/* Dichotomous Keys */
+
+/* formatting modified from: https://codepen.io/Kseso/pen/AwRYgZ */
+/* rather than actually making a line, a dotted border is shifted so it looks like a dotted line */
+/* and white background over the text hides it when there's text */
+
+.dichotomous-key p {
+	position: relative;
+	background-color: white;
+	padding-right: 150px; /* this determines how much space there is from the right before the couplet description breaks to form a new line, if the number is too small the text will go behine the couplet value */
+	margin: 0;
+}
+
+.dichotomous-key p:before {
+	content: '';
+	position: absolute;
+	bottom: 8px; /* this determines the position of the dotted line */
+	width: 100%;
+	border-bottom: 2px dotted var(--nav_text);
+}
+
+.couplet-description {
+	position: relative;
+	background-color: white;
+	display: inline;
+	z-index: 1;
+	padding-right: 4px;
+}
+
+.couplet-value {
+	background-color: white; /* necessary to hide the line dotted background line */
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-left: 4px; /* sets the white space to the left of the text, changing how much of the line is shown */
+	text-align: right;
+	z-index: 2;
+}
+

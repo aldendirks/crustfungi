@@ -1,0 +1,12 @@
+Key,Type,Mandatory,Value,Date,Notes
+#Main metadata about the key (e.g. for citing the key),,,,,
+title,metadata,yes,Crust Fungi Synoptic Key,,
+year,metadata,yes,2021,,
+authors,metadata,yes,"Dirks, Alden C.",,
+publisher,metadata,no,,,
+location,metadata,no,,,
+contact,metadata,no,,,
+version,metadata,yes,1,,
+#Releases - keep track of the release history below this line. Most recent releases at the top. The version code in the 'value' column below this line should match that of the current release above it.,,,,,
+release,history,no,1,7/1/20,Implemented first knowledge base for crust fungi
+release,history,no,0.1,6/28/20,Initial test version

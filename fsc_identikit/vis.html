@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google Analytics - global site tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135441904-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-135441904-1');
+	</script>
+	<!---->
+	<meta charset="UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Key | CrustFungi.Com</title>
+	<meta name="description" content="Use the FSC Identikit synoptic key to identify your crust fungus.">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+	<script src="/js/handlebarsNavBar.js"></script>
+	<!-- faviconit.com favicon generator -->
+	<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/images/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/images/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="/images/favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+	<!---->
+	<!-- FSC Identikit -->
+	<script>
+        var url = new URL(window.location.href);
+        var kb = url.searchParams.get("kb");
+        var tombiovis = {
+            opts: {
+                hideVisDropdown: false,
+                tools: ["vis1", "vis2", "vis3", "vis4", "vis5", "vis6"],
+                selectedTool: "vis1",
+                //lastVisualisation: "vis1",
+                //gui: "guiOnsenUi",
+                //ignoreNegativeScoring: false,
+                pwaSupress: true,
+                toolconfig: {
+                    genKeyinput: {
+                        selectedGroup: "Structure",
+                    },
+                    //vis4: {
+                    //    subTitleChar: "CommonName"
+                    //},
+                    //vis6: {
+                    //    keyinput: "keyInputOnsenUi"
+                    //}
+                },
+                checkKB: false,
+                devel: false,
+                tombiopath: "tombio/",
+                tombiokbpath: kb ? kb : "kb/"
+            },
+        }
+    </script>
+    <!-- This line required above script imports for electron environment -->
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <!--ES6 polyfill - new for 1.7.0-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.6/core.min.js"></script>
+    <!--Local formatting-->
+	<link rel="stylesheet" type="text/css" href="site.css">
+    <!--Change the path to load.js and load.css to match the installation environment-->
+	<link rel="stylesheet" type="text/css" href="tombio/min/css/load.min.css">
+	<!---->
+</head>
+<body>
+	<div class="body-flex-container">
+		<div class="nav" id="responsive-nav">
+			<div id="logo">
+				<script id="logo-template" type="text/x-handlebars-template">
+					<p>CRUST</p>
+					<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
+					<p>FUNGI</p>
+				</script>
+			</div>
+			<div id="links">
+				<script id="links-template" type="text/x-handlebars-template">
+					{{{links}}}
+				</script>
+				<script src="/js/activateNavIcon.js"></script>
+				<script src="/js/animateNavIcon.js"></script>
+			</div>
+			<div id="copyright">
+				<script id="copyright-template" type="text/x-handlebars-template">
+					<p>&copy; {{copyright}} ALDEN DIRKS</p>
+				</script>
+			</div>
+		</div>
+		<div class="key-container">
+			<div class="content key">
+				<header>
+					<h1>Synoptic Key to Crust Fungi</h1>
+				</header>
+			</div>
+			<div id="tombiod3"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="tombio/load.js"></script>
+</body>
+</html>

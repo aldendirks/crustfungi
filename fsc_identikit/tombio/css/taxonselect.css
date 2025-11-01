@@ -1,0 +1,40 @@
+﻿.taxonSelectTaxarect {
+    rx: 5;
+    ry: 5;
+}
+
+.taxonSelectTaxarectSelected {
+    fill: rgb(100,100,100);
+}
+
+.taxonSelectTaxarectDeselected {
+    fill: lightgrey;
+}
+
+.taxonSelectScientificnames {
+    font-family: Arial;
+    font-size: 13px;
+    stroke-width: 0px;
+    font-style: italic;
+    cursor: default;
+}
+
+.taxonSelectScientificnamesSelected {
+    fill: white;
+}
+
+.taxonSelectScientificnamesDeselected {
+    fill: black;
+}
+
+.taxonSelectHiddenControlsArrow {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 3px;
+    width: 10px;
+}
+
+.taxonSelect{
+    margin: 5px;
+}

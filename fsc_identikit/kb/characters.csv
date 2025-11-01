@@ -1,0 +1,30 @@
+Group,Character,Label,Help,HelpShort,Status,ValueType,ControlType,Params,Weight,Latitude
+Taxonomy,Taxon,Taxon,,,,,,,,
+Taxonomy,Subphylum,Subphylum,,,key,text,single,,10,
+Taxonomy,Class ,Class,,,key,text,single,,10,
+Taxonomy,Order,Order,,,key,text,single,,10,
+Taxonomy,Family,Family,,,key,text,single,,10,
+Taxonomy,Genus,Genus,,,key,text,single,,10,
+Macro,Substrate,Substrate,What is the fungus growing on?,,key,text,single,,6,
+Macro,Color,Color,What is/are the dominant color(s) of the hymenium?,,key,text,multi,,4,
+Macro,Growth,Growth form,How is the crust growing across the substrate?,,key,text,multi,,6,
+Macro,Hymenophore,Hymenophore,What is the configuration of the hymenophore?,,key,text,multi,,8,
+Macro,Fresh_texture,Texture,What is the texture of the fresh fruiting body?,,key,text,multi,,4,
+Macro,Spore_print,Spore print,What is the color of the spore print?,,key,text,single,,4,
+Micro,Hyphal_system,Hyphal system ,Are there just generative hyphae present or also skeletal and binding hyphae?,,key,text,single,,4,
+Micro,Clamps,Clamps,Are there clamps anywhere on the hyphae (including at the base of basidia)?,,key,text,single,,6,
+Micro,Basidia_septa,Basida septa,Is the crust a homobasidiomycete (without basidia septa) or heterobasidiomycete (with basidia septa)? ,,key,text,single,,10,
+Micro,Basidia_type,Basidia type,What type of basidia are present?,,key,text,single,,10,
+Micro,Basidia_shape,Basidia shape,What is the shape of the basidia?,,key,text,multi,,4,
+Micro,Basidia_length,Basidia length,What is the average length of basidia in &#181;m?,,key,numeric,spin,"1,100,.1",6,5
+Micro,Basidia_width,Basidia width,What is the average width of basidia in &#181;m?,,key,numeric,spin,"1,100,.1",6,2
+Micro,Sterigmata,Sterigmata,How many sterigmata do the basidia have?,,key,numeric,spin,"1,8,1",10,0
+Micro,Basidiospore_amyloidy,Basidiospore amyloidy,"Are the basidiospore inamyloid, amyloid, or dextrinoid in Melzer's reagent?",,key,text,single,,10,
+Micro,Basidiospore_aspect,Basidiospore shape,What is the shape of the basidiospores (as a function of its length by width quotient)?,,key,ordinal,multi,,6,1
+Micro,Basidiospore_ornamentation,Basidiospore ornamentation,Is the basidiospore smooth or does it have some sort of ornamentation?,,key,text,single,,10,
+Micro,Basidiospore_length,Basidiospore length,What is the average length of basidiospores in &#181;m?,,key,numeric,spin,"1,100,.1",8,2
+Micro,Basidiospore_width,Basidiospore width,What is the average width of basidiospores in &#181;m?,,key,numeric,spin,"1,100,.1",8,1
+Micro,Basidiospore_quotient,Basidiospore quotient,What is the averag ratio of basidiospore length by width? ,,key,numeric,spin,"1,10,.1",8,0.2
+Micro,Cystidia,Cystidia,Are there any cystidia present?,,key,text,multi,,10,
+Micro,Hyphidia,Hyphidia,Are there any hyphidia present?,,key,text,multi,,10,
+Micro,Distinctive_traits,Distinctive traits,Are there any of the following distinctive traits that can help with identification? ,,key,text,multi,,10,

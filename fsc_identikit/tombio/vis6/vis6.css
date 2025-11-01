@@ -1,0 +1,45 @@
+﻿#vis6 .taxon {
+    font-family: Arial;
+    font-style: italic;
+    fill: black;
+    background-color: rgb( 200,200,200);
+    border-radius: 5px;
+    position: absolute;
+}
+
+
+#vis6 .vis6TaxonLeft {
+    width: 99%;
+}
+#vis6 .vis6TaxonRight {
+    font-family: monospace;
+    font-size: 14px;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+#vis6 .vis6ScoreInd, #vis6 .vis6CharInd {
+    border-radius: 5px;
+    padding: 0 0.4em;
+    margin: 0 0.1em;
+}
+
+#vis6 .vis6ScoreRow {
+    opacity: .75;
+    font-size: 14px;
+    font-style: normal;
+    padding: 0.2em;
+}
+
+#vis6 .vis6ellipsis {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.vis6CharWeightedScore {
+    font-family: monospace;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 0 5px;
+    background-color: rosybrown;
+}

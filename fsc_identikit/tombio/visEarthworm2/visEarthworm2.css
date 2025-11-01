@@ -1,0 +1,269 @@
+﻿
+.tombioEsbHelp-pictures-div {
+    float: right;
+    margin-left: 2em;
+}
+.tombioEsbHelp-picture {
+    width: 180px;
+}
+.tombioEsbHelp-text {
+    position: relative;
+    top: -1em;
+}
+.tombioEsbHelp-picture-caption{
+    margin: 0 0 1.5em 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.tombioEsbBooklink {
+    font-style:italic;
+    text-decoration: underline;
+}
+
+#tombioEsbHelpDialog {
+    padding: 0;
+}
+#tombioEsbHelpTabs { 
+    position: relative; 
+    padding-left: 7.5em; 
+    border-width: 0px; 
+} 
+#tombioEsbHelpTabs .ui-tabs-nav { 
+    background: none; 
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    position: absolute; 
+    left: 0.25em; 
+    top: 0.25em; 
+    bottom: 0.25em; 
+    width: 7em; 
+    padding: 0.2em 0 0.2em 0.2em; 
+    -moz-border-radius: 0px 0px 0px 0px; 
+    -webkit-border-radius: 0px 0px 0px 0px; 
+    border-radius: 0px 0px 0px 0px; 
+} 
+#tombioEsbHelpTabs .ui-tabs-nav li { 
+    right: 1px; 
+    width: 100%; 
+    border-right: none; 
+    border-bottom-width: 1px !important; 
+    -moz-border-radius: 4px 0px 0px 4px; 
+    -webkit-border-radius: 4px 0px 0px 4px; 
+    border-radius: 4px 0px 0px 4px; 
+    overflow: hidden; 
+} 
+#tombioEsbHelpTabs .ui-tabs-nav li.ui-tabs-selected, 
+#tombioEsbHelpTabs .ui-tabs-nav li.ui-state-active { 
+    border-right: 1px solid transparent; 
+} 
+#tombioEsbHelpTabs .ui-tabs-nav li a { 
+    float: right; 
+    width: 100%; 
+    text-align: right; 
+} 
+#tombioEsbHelpTabs .ui-tabs-panel { 
+    height: 200px; 
+}
+
+/*Stops scroll-bars appearing */
+#tombioEsbPopup { 
+    overflow:hidden;   
+} 
+#tombioEsbPopupTabs { 
+    padding: 0px; 
+    background: none; 
+    border-width: 0px; 
+} 
+#tombioEsbPopupTabs .ui-tabs-nav { 
+    padding-left: 0px; 
+    background: transparent; 
+    border-width: 0px 0px 1px 0px; 
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px; 
+} 
+#tombioEsbPopupTabs .ui-tabs-panel { 
+    border-width: 0px;
+}
+
+#tombioEsbPopupTabs1 {
+    position: relative;
+}
+
+#tombioEsbPopupTabs2 {
+    position: relative;
+}
+
+#tombioEsbMapDiv { 
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+} 
+#tombioEsbPopupMap {
+    position: relative;
+    top: -40px;
+    left: -20px;
+}
+
+#tombioEsbNbnLogo {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 70px;
+}
+
+#tombioEsbNbnLoading {
+    position: absolute;
+    left: 90px;
+    top: 20px;
+    font-size: 1.2em;
+}
+
+.tombioEsbSpiningNbn {
+    -webkit-animation: spin .8s infinite linear;
+    animation: spin .8s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.tombioEsbScientificnames {
+    font-family: Arial;
+    font-size: 13px;
+    stroke-width: 0px;
+    font-style: italic;
+    fill: black;
+}
+
+.tombioEsbLegendText {
+    font-family: Arial;
+    font-size: 13px;
+    stroke-width: 0px;
+    fill: black;
+}
+
+.tombioEsbCharactervalue {
+    font-family: Arial;
+    font-size: 11px;
+    stroke-width: 0px;
+    fill: black;
+}
+
+#tombioEsbKeyInput td {
+    padding: 2px;
+}
+#tombioEsbKeyInput select {
+    width: 130px;
+}
+
+#tombioEsbKeyInput .ui-selectmenu-button {
+    /*width: 130px;*/ /* For ESB website */
+    width: 103px; /* For development */
+}
+
+#tombioEsbOptions, #tombioEsbReset {
+    width: 150px;
+}
+
+#tombioEsbKeyInput .ui-spinner {
+    margin-bottom: 0px;
+    width: 127px;
+}
+
+.tombioEsbMorphoLabel {
+    cursor: help;
+}
+.tombioEsbMorphoLabelNoLink, .tombioEsbMorphoLabel{
+    font-size: 0.9em;
+    text-align: right;
+    padding-right: 0.5em;
+    color: rgb(50, 50, 50);
+}
+
+.tombioEsbWorm rect {
+    fill: lightgray;
+}
+
+.tombioEsbIndText {
+    font-size: 0.8em;
+    text-anchor: middle;
+    fill: white;
+    font-weight: bold;
+}
+
+/*Blue http://jfly.iam.u-tokyo.ac.jp/color/*/ 
+.tombioEsbIndmatch {
+    fill: #0072B2; 
+}
+
+/*Vermillion http://jfly.iam.u-tokyo.ac.jp/color/*/ 
+.tombioEsbIndnomatch {
+    fill: #D55E00; 
+}
+
+.tombioEsbIndnone {
+    fill: white;
+}
+
+.tombioEsbResetImage {
+    width: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#tombioEsbHeaderTaxa {
+    height: 20px;
+    position: relative;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: rgb(128, 128, 128);
+}
+
+#tombioEsbCandidateTaxa {
+    position: absolute;
+}
+
+#tombioEsbExcludedTaxa {
+    position: absolute;
+}
+
+.tombioEsbConfidenceLevel {
+    font-family: "sans-serif";
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    border: solid 1px black;
+    font-size: 12px;
+    color: black;
+    line-height: 12px;
+    text-align: center;
+    background: #D55E00; /*Vermillion*/
+    margin-left: 10px;
+}
+
+
+

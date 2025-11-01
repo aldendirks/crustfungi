@@ -1,406 +1,219 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135441904-1"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-135441904-1');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crust Fungi Species Descriptions | CrustFungi.Com</title>
-<meta name="description" content="Browse the species of crust fungi that are showcased on CrustFungi.Com.">
-<link rel="stylesheet" href="/css/style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
-<script src="/js/handlebarsNavBar.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/showSpeciesImageOnHover.js"></script>
-<!--faviconit.com favicon generator-->
-<link rel="shortcut icon" href="/images/favicon/favicon.ico">
-<link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon/favicon.ico">
-<link rel="icon" type="image/png" sizes="196x196" href="/images/favicon/favicon-192.png">
-<link rel="icon" type="image/png" sizes="160x160" href="/images/favicon/favicon-160.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon-64.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16.png">
-<link rel="apple-touch-icon" href="/images/favicon/favicon-57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/favicon-114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/favicon-72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/favicon-144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/favicon-60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/favicon-120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/favicon-76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/favicon-152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon-180.png">
-<meta name="msapplication-TileColor" content="#FFFFFF">
-<meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
-<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
-</head>
-	
+	<!-- Google Analytics - global site tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135441904-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-135441904-1');
+	</script>
+	<!---->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Species | CrustFungi.Com</title>
+	<meta name="description" content="Browse the species of crust fungi that are showcased on CrustFungi.Com.">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- stylesheet for grid view and list view icons -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+	<script src="/js/handlebarsNavBar.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- faviconit.com favicon generator -->
+	<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/images/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/images/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="/images/favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+	<!---->
+</head>	
 <body>
-<div class="nav" id="responsive-nav">
-	<div id="logo">
-		<script id="logo-template" type="text/x-handlebars-template">
-			<p>CRUST</p>
-			<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
-			<p>FUNGI</p>
-		</script>
-	</div>
-	<div id="links">
-		<script id="links-template" type="text/x-handlebars-template">
-			{{{links}}}
-		</script>
-		<script src="/js/activateNavIcon.js"></script>
-		<script src="/js/animateNavIcon.js"></script>
-	</div>
-	<div id="copyright">
-		<script id="copyright-template" type="text/x-handlebars-template">
-			<p>&copy; {{copyright}} ALDEN DIRKS</p>
-		</script>
-	</div>
-</div>
-
-<div class="content species">
-	<header>
-		<h1>Corticioid Fungal Species</h1>
-	</header>
-	<div class="species-flex">
-		<div class="species-text">
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Aleurodiscus</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="aleurodiscusOakesii" data-species="Aleurodiscus oakesii"><em>A. oakesii</em></p>
-				</div>
+	<div class="body-flex-container">
+		<div class="nav" id="responsive-nav">
+			<div id="logo">
+				<script id="logo-template" type="text/x-handlebars-template">
+					<p>CRUST</p>
+					<img {{{logo}}} alt="CrustFungi.Com logo, a linoleum print of Phlebia radiata">
+					<p>FUNGI</p>
+				</script>
 			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Athelia</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="atheliaBombacina" data-species="Athelia bombacina"><em>A. bombacina</em></p>
-					<p data-filename="atheliaEpiphylla" data-species="Athelia epiphylla"><em>A. epiphylla</em></p>
-				</div>
+			<div id="links">
+				<script id="links-template" type="text/x-handlebars-template">
+					{{{links}}}
+				</script>
+				<script src="/js/activateNavIcon.js"></script>
+				<script src="/js/animateNavIcon.js"></script>
 			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Botryobasidium</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="botryobasidiumConspersum" data-species="Botryobasidium conspersum"><em>B. conspersum</em></p>
-				</div>
+			<div id="copyright">
+				<script id="copyright-template" type="text/x-handlebars-template">
+					<p>&copy; {{copyright}} ALDEN DIRKS</p>
+				</script>
 			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Botryohypochnus</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="botryohypochnusIsabellinus" data-species="Botryohypochnus isabellinus"><em>B. isabellinus</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Byssocorticium</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="byssocorticiumAtrovirens" data-species="Byssocorticium atrovirens"><a href="/html/species/byssocorticium-atrovirens.html"><em>B. atrovirens</em></a></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Byssomerulius</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="byssomeruliusCorium" data-species="Byssomerulius corium"><em>B. corium</em></p>
-					<p data-filename="byssomeruliusIncarnatus" data-species="Byssomerulius incarnatus"><em>B. incarnatus</em></p>
-					<p class="synonymy" data-filename="byssomeruliusIncarnatus" data-species="Byssomerulius incarnatus">&equiv; <em>Phlebia incarnata</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Coniophora</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="coniophoraPuteana" data-species="Coniophora puteana"><em>C. puteana</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Corticium</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="corticiumLombardiae" data-species="Corticium lombardiae"><em>C. lombardiae</em></p>
-					<p data-filename="corticiumMeridioroseum" data-species="Corticium meridioroseum"><em>C. meridioroseum</em></p>
-					<p data-filename="corticiumRoseocarneum" data-species="Corticium roseocarneum"><em>C. roseocarneum</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Cylindrobasidium</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="cylindrobasidiumEvolvens" data-species="Cylindrobasidium evolvens"><em>C. evolvens</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Dendrothele</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="dendrotheleAcerina" data-species="Dendrothele acerina"><em>D. acerina</em></p>
-					<p data-filename="dendrotheleNivosa" data-species="Dendrothele nivosa"><em>D. nivosa</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Dichostereum</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="dichostereumSordulentum" data-species="Dichostereum sordulentum"><em>D. sordulentum</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Galzinia</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="galziniaIncrustans" data-species="Galzinia incrustans"><em>G. incrustans</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Granulobasidium</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="granulobasidiumVellereum" data-species="Granulobasidium vellereum"><em>G. vellereum</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Hydnophlebia</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="hydnophlebiaChrysorhiza" data-species="Hydnophlebia chrysorhiza"><em>H. chrysorhiza</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Hymenochaete</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="hymenochaeteRubiginosa" data-species="Hymenochaete rubiginosa"><em>H. rubiginosa</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Hymenochaetopsis</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="hymenochaetopsisCorrugata" data-species="Hymenochaetopsis corrugata"><em>H. corrugata</em></p>
-					<p data-filename="hymenochaetopsisOlivacea" data-species="Hymenochaetopsis olivacea"><em>H. olivacea</em></p>
-					<p class="synonymy" data-filename="hymenochaetopsisOlivacea" data-species="Hymenochaetopsis olivacea">&equiv; <em>Pseudochaete olivacea</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Hyphoderma</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="hyphodermaTenue" data-species="Hyphoderma tenue"><em>H. tenue</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Hyphodontia</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="hyphodontiaSubspathulata" data-species="Hyphodontia subspathulata"><em>H. subspathulata</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Hypochniciellum</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="hypochniciellumOvoideum" data-species="Hypochniciellum ovoideum"><em>H. ovoideum</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Irpex</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="irpexLacteus" data-species="Irpex lacteus"><em>I. lacteus</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Lindtneria</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="lindtneriaLeucobryophila" data-species="Lindtneria leucobryophila"><em>L. leucobryophila</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Lyomyces</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="lyomycesJuniperi" data-species="Lyomyces juniperi"><em>L. juniperi</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Leucogyrophana</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="leucogyrophanaMollusca" data-species="Leucogyrophana mollusca"><em>L. mollusca</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Paullicorticium</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="paullicorticiumPearsonii" data-species="Paullicorticium pearsonii"><em>P. pearsonii</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Peniophora</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="peniophoraAlbobadia" data-species="Peniophora albobadia"><em>P. albobadia</em></p>
-					<p data-filename="peniophoraCinerea" data-species="Peniophora cinerea"><em>P. cinerea</em></p>
-					<p data-filename="peniophoraIncarnata" data-species="Peniophora incarnata"><em>P. incarnata</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Peniophorella</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="peniophorellaPubera" data-species="Peniophorella pubera"><em>P. pubera</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Phlebia</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="phlebiaCoccineofulva" data-species="Phlebia coccineofulva"><em>P. coccineofulva</em></p>
-					<p data-filename="phlebiaTremellosa" data-species="Phlebia tremellosa"><em>P. tremellosa</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Phlebiopsis</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="phlebiopsisGigantea" data-species="Phlebiopsis gigantea"><em>P. gigantea</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Resinicium</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="resiniciumBicolor" data-species="Resinicium bicolor"><em>R. bicolor</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Serpula</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="serpulaHimantioides" data-species="Serpula himantioides"><em>S. himantioides</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Sistotrema</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="sistotremaCoroniferum" data-species="Sistotrema coroniferum"><em>S. coroniferum</em></p>
-					<p data-filename="sistotremaOblongisporum" data-species="Sistotrema oblongisporum"><em>S. oblongisporum</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Sistotremastrum</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="sistotremastrumGuttuliferum" data-species="Sistotremastrum guttuliferum"><em>S. guttuliferum</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Sphaerobasidium</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="sphaerobasidiumMinutum" data-species="Sphaerobasidium minutum"><em>S. minutum</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Steccherinum</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="steccherinumOchraceum" data-species="Steccherinum ochraceum"><em>S. ochraceum</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Stereum</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="stereumOstrea" data-species="Stereum ostrea"><em>S. ostrea</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Subulicystidium</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="subulicystidiumBrachysporum" data-species="Subulicystidium brachysporum"><em>S. brachysporum</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Thelephora</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="thelephoraMultipartita" data-species="Thelephora multipartita"><em>T. multipartita</em></p>
-					<p data-filename="thelephoraTerrestris" data-species="Thelephora terrestris"><em>T. terrestris</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Trechispora</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="trechisporaFarinacea" data-species="Trechispora farinacea"><em>T. farinacea</em></p>
-				</div>
-			</div>
-			<div class="binomial-flex">
-				<div class="binomial-genus">
-					<p><em>Xylobolus</em></p>
-				</div>
-				<div class="binomial-epithet">
-					<p data-filename="xylobolusFrustulatus" data-species="Xylobolus frustulatus"><em>X. frustulatus</em></p>
-				</div>
-			</div>	
 		</div>
-		<div class="species-image">
-			<img src="/images/species/aleurodiscusOakesii.jpg" alt="Aleurodiscus oakesii" width="100%">
-			<p><em>Aleurodiscus oakesii</em></p>
+		<div class="content species">
+			<header>
+				<h1>Crust Fungi Profiles</h1>
+			</header>
+			<div class="species-filters">
+				<div class="species-filters-buttons">
+					<button class="active" id="species-grid-button" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+					<button class="" id="species-list-button" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+					<script src="/js/toggleView.js"></script>
+				</div>
+			</div>
+			<div class="species-flex-parent" id="species-grid-view">
+				<div class="species-flex-child">
+					<p><em><strong>Athelia salicum</strong></em></p>
+					<a href="/html/species/athelia-salicum.html"><img src="/images/species/atheliaSalicum.jpg" alt="Athelia salicum"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Byssocorticium atrovirens</strong></em></p>
+					<a href="/html/species/byssocorticium-atrovirens.html"><img src="/images/species/byssocorticiumAtrovirens.jpg" alt="Byssocorticium atrovirens"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Byssocorticium pulchrum</strong></em></p>
+					<a href="/html/species/byssocorticium-pulchrum.html"><img src="/images/species/byssocorticiumPulchrum.jpg" alt="Byssocorticium pulchrum"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Ceriporia spissa</strong></em></p>
+					<a href="/html/species/ceriporia-spissa.html"><img src="/images/species/ceriporiaSpissa.jpg" alt="Ceriporia spissa"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Cylindrobasidium evolvens</strong></em></p>
+					<a href="/html/species/cylindrobasidium-evolvens.html"><img src="/images/species/cylindrobasidiumEvolvens.jpg" alt="Cylindrobasidium evolvens"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Galzinia incrustans</strong></em></p>
+					<a href="/html/species/galzinia-incrustans.html"><img src="/images/species/galziniaIncrustans.jpg" alt="Galzinia incrustans"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Lopharia cinarescens</strong></em> (no species page)</p>
+					<img src="/images/species/lophariaCinarescens.jpg" alt="Lopharia cinarescens">
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Mycoacia uda</strong></em></p>
+					<a href="/html/species/mycoacia-uda.html"><img src="/images/species/mycoaciaUda.jpg" alt="Mycoacia uda"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Peniophora cinerea</strong></em></p>
+					<a href="/html/species/peniophora-cinerea.html"><img src="/images/species/peniophoraCinerea.jpg" alt="Peniophora cinerea"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Protomerulius minor</strong></em></p>
+					<a href="/html/species/protomerulius-minor.html"><img src="/images/species/protomeruliusMinor.jpg" alt="Protomerulius minor"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Punctularia strigosozonata</strong></em></p>
+					<a href="/html/species/punctularia-strigosozonata.html"><img src="/images/species/punctulariaStrigosozonata.jpg" alt="Punctularia strigosozonata"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Sarcoporia polyspora</strong></em></p>
+					<a href="/html/species/sarcoporia-polyspora.html"><img src="/images/species/sarcoporiaPolyspora.jpg" alt="Sarcoporia polyspora"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Sertulicium granuliferum</strong></em></p>
+					<a href="/html/species/sertulicium-granuliferum.html"><img src="/images/species/sistotremastrumGuttuliferum.jpg" alt="Sertulicium granuliferum"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Subulicystidium brachysporum</strong></em></p>
+					<a href="/html/species/subulicystidium-brachysporum.html"><img src="/images/species/subulicystidiumBrachysporum.jpg" alt="Subulicystidium brachysporum"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Tomentella ferruginea</strong></em></p>
+					<a href="/html/species/tomentella-ferruginea.html"><img src="/images/species/tomentellaFerruginea.jpg" alt="Tomentella ferruginea"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Trechispora stellulata</strong></em></p>
+					<a href="/html/species/trechispora-stellulata.html"><img src="/images/species/trechisporaStellulata.jpg" alt="Trechispora stellulata"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Tubulicrinis accedens</strong></em></p>
+					<a href="/html/species/tubulicrinis-accedens.html"><img src="/images/species/tubulicrinisAccedens.jpg" alt="Tubulicrinis accedens"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Vararia investiens</strong></em></p>
+					<a href="/html/species/vararia-investiens.html"><img src="/images/species/varariaInvestiens.jpg" alt="Vararia investiens"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Xenasma praeteritum</strong></em></p>
+					<a href="/html/species/xenasma-praeteritum.html"><img src="/images/species/xenasmaPraeteritum.jpg" alt="Xenasma praeteritum"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><strong><em>Xenasmatella</em> sp. <em>'sublividus'</em></strong></p>
+					<a href="/html/species/xenasmatella-sp-sublividus.html"><img src="/images/species/xenasmatellaSpSublividus.jpg" alt="Xenasmatella sp. 'sublividus'"></a>
+				</div>
+				<div class="species-flex-child">
+					<p><em><strong>Xenasmatella vaga</strong></em> (no species page)</p>
+					<img src="/images/species/xenasmatellaVaga.jpeg" alt="Xenasmatella vaga">
+				</div>
+			</div>
+			<div id="species-list-view">
+				<p><strong>Fungi</strong>: <strong>Basidiomycota</strong>: <strong>Agaricomycotina</strong>: <strong>Agaricomcyetes</strong>:</p>
+				<h2>Agaricales</h2>
+				<p class="species-family"><em><strong>Physalacriaceae</strong></em></p>
+				<p class="species-species"><a href="/html/species/cylindrobasidium-evolvens.html"><em>Cylindrobasidium evolvens</em></a></p>
+				<h2>Atheliales</h2>
+				<p class="species-family"><em><strong>Atheliaceae</strong></em></p>
+				<p class="species-species"><a href="/html/species/athelia-salicum.html"><em>Athelia salicum</em></a></p>
+				<p class="species-family"><em><strong>Byssocorticiaceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/keys/byssocorticium.html">Byssocorticium</a></em> <img src="/images/icons/key_icon_small.png" alt="Key icon" height="18px" style="margin-bottom: -4px"></p>
+				<p class="species-species"><em><a href="/html/species/byssocorticium-atrovirens.html">Byssocorticium atrovirens</a></em></p>
+				<p class="species-species"><em><a href="/html/species/byssocorticium-pulchrum.html">Byssocorticium pulchrum</a></em></p>
+				<h2>Auriculariales</h2>
+				<p class="species-family"><em><strong>Exidiaceae</strong></em></p>
+				<p class="species-species"><a href="/html/species/protomerulius-minor.html"><em>Protomerulius minor</em></a></p>
+				<h2>Corticiales</h2>
+				<p class="species-family"><em><strong>Corticiaceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/galzinia-incrustans.html">Galzinia incrustans</a></em></p>
+				<p class="species-family"><em><strong>Punctulariaceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/punctularia-strigosozonata.html">Punctularia strigosozonata</a></em></p>
+				<h2>Hymenochaetales</h2>
+				<p class="species-family"><em><strong>Tubulicrinaceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/tubulicrinis-accedens.html">Tubulicrinis accedens</a></em></p>
+				<h2>Polyporales</h2>
+				<p class="species-family"><em><strong>Irpicaceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/ceriporia-spissa.html">Ceriporia spissa</a></em></p>
+				<p class="species-family"><em><strong>Meruliaceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/mycoacia-uda.html">Mycoacia uda</a></em></p>
+				<p class="species-family"><em><strong>Polyporaceae</strong></em></p>
+				<p class="species-species"><em>Lopharia cinarescens</em></p>
+				<p class="species-species"><em><a href="/html/species/sarcoporia-polyspora.html">Sarcoporia polyspora</a></em></p>
+				<h2>Russulales</h2>
+				<p class="species-family"><em><strong>Lachnocladiaceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/vararia-investiens.html">Vararia investiens</a></em></p>
+				<p class="species-family"><em><strong>Peniophoraceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/peniophora-cinerea.html">Peniophora cinerea</a></em></p>
+				<h2>Thelephorales</h2>
+				<p class="species-family"><em><strong>Thelephoraceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/tomentella-ferruginea.html">Tomentella ferruginea</a></em></p>
+				<h2>Trechisporales</h2>
+				<p class="species-family"><em><strong>Hydnodontaceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/subulicystidium-brachysporum.html">Subulicystidium brachysporum</a></em></p>
+				<p class="species-species"><em><a href="/html/species/trechispora-stellulata.html">Trechispora stellulata</a></em></p>
+				<p class="species-family"><em><strong>incertae sedis</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/sertulicium-granuliferum.html">Sertulicium granuliferum</a></em></p>
+				<h2>Xenasmatales</h2>
+				<p class="species-family"><em><strong>Xenasmataceae</strong></em></p>
+				<p class="species-species"><em><a href="/html/species/xenasma-praeteritum.html">Xenasma praeteritum</a></em></p>
+				<p class="species-species"><a href="/html/species/xenasmatella-sp-sublividus.html"><em>Xenasmatella</em> sp. <em>'sublividus'</em></a></p>
+				<p class="species-species"><em>Xenasmatella vaga</em></p>
+			</div>
 		</div>
 	</div>
-</div>
 </body>
 </html>

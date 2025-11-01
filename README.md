@@ -1,10 +1,10 @@
 # Crust Fungi Website
 
-Crusts are ubiquitous but often overlooked fungi that have important ecological functions as sapbrobes, parasites, and mycorrhizae. CrustFungi.Com is a website dedicated to showcasing the diversity of crust fungi and offering information to help others succesfully identify their specimens.
+Crusts are ubiquitous but often overlooked fungi that have important ecological functions as saprotrophs, parasites, and mycorrhizae. CrustFungi.Com is a website dedicated to showcasing the diversity of crust fungi and offering information to help others succesfully identify crust specimens.
 
 ## Site Navigation
 
-CrustFungi.Com is organized with site root-relative paths so that handlebars.js works on all html files, no matter there relative location from the handlebars.js file. 
+CrustFungi.Com is organized with site root-relative paths so that handlebars.js works on all html files, no matter their relative location from the handlebars.js file. 
 
 ## Naming Things
 
